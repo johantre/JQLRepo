@@ -24,6 +24,14 @@ issuetype != "Test Plan" AND
 status != Closed 
 ORDER BY Rank ASC
 
+--Miles Defect Kanban board "Business View"
+project = MILES4ALL AND 
+	(issuetype in (Defect) AND 
+	(status not in (Inactive, Ready) OR issuetype = Epic) AND 
+	(status != Closed OR issuetype = Story) AND 
+	status not in (Closed, Resolved) AND 
+	"Epic Link" is not EMPTY) AND 
+	issuetype not in (Saga) ORDER BY Rank ASC
 
 --Quick filters
 
