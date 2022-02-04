@@ -25,7 +25,7 @@ status != Closed
 ORDER BY Rank ASC
 
 --Miles Defect Kanban board "Business View"
-project = MILES4ALL AND 
+project in (MILES4ALL, "MyBMW@SF") AND 
 	(issuetype in (Defect) AND 
 	(status not in (Inactive, Ready) OR issuetype = Epic) AND 
 	(status != Closed OR issuetype = Story) AND 
