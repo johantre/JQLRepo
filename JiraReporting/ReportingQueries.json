@@ -379,6 +379,24 @@
 			}
 		},
 		{
+			"Id": "314989",
+			"Data": {
+				"name": "MPTDefectsInTestPlanOpenInTreatment FNC BE",
+				"description": "Defects in treatment by MPT for BE",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTesting('MPTTestsInTestPlan FNC BE') AND status not in (Closed, Resolved) AND assignee in (qtd2005, qtd0593, qt76380, qtc6712, qtb4864, qxz084o, qxz0c91) ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "314990",
+			"Data": {
+				"name": "MPTDefectsInTestPlanOpenInTreatment FNC NL",
+				"description": "Defects in treatment by MPT for NL",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTesting('MPTTestsInTestPlan FNC NL') AND status not in (Closed, Resolved) AND assignee in (qtd2005, qtd0593, qt76380, qtc6712, qtb4864, qxz084o, qxz0c91) ORDER BY rank",
+				"favourite": true
+			}
+		},		
+		{
 			"Id": "268002",
 			"Data": {
 				"name": "MPTDefectsInTestPlanOpenMPT EP BE",
