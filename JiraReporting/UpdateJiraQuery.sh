@@ -1,5 +1,4 @@
 #!/bin/sh
-
 HOSTNAME="https://atc.bmwgroup.net/jira/rest/api/2/filter/"
 EXTENSION="?expand"
 PASS=$1
