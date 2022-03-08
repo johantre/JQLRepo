@@ -10,11 +10,29 @@
 			}
 		},
 		{
+			"Id": "321243",
+			"Data": {
+				"name": "BKL Epics missing Labels",
+				"description": "",
+				"jql": "project = MILES4ALL AND issuetype = Epic AND labels not in (Technical_BE, Technical_NL, NL, BE)",
+				"favourite": true
+			}
+		},
+		{
 			"Id": "292583",
 			"Data": {
 				"name": "BKL Open Epics of Closed Sagas",
 				"description": "",
 				"jql": "issueFunction in portfolioChildrenOf('project = MILES4ALL and issuetype = Saga and status in (Closed, Resolved)') AND status not in (Closed, Resolved)",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "321236",
+			"Data": {
+				"name": "BKL Open Epics w.o. Issues",
+				"description": "",
+				"jql": "project = MILES4ALL AND issuetype = Epic AND status not in (Closed, Resolved) AND issueFunction not in epicsOf('project = MILES4ALL')",
 				"favourite": true
 			}
 		},
