@@ -12,9 +12,9 @@
 		{
 			"Id": "321555",
 			"Data": {
-				"name": "BKL Closed Epics w Open Tests",
+				"name": "BKL Closed Epics w Open items",
 				"description": "",
-				"jql": "issueFunction in epicsOf('project = MILES4ALL AND issuetype = Test AND status not in (Inactive, Ready)') AND status in (Closed, Resolved)",
+				"jql": "issueFunction in epicsOf('project = MILES4ALL AND status not in (Inactive, Ready, Closed, Resolved)') AND status in (Closed, Resolved)",
 				"favourite": true
 			}
 		},
@@ -42,6 +42,15 @@
 				"name": "BKL Open Epics w.o. Issues",
 				"description": "",
 				"jql": "project = MILES4ALL AND issuetype = Epic AND status not in (Closed, Resolved) AND issueFunction not in epicsOf('project = MILES4ALL')",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "321556",
+			"Data": {
+				"name": "BKL Open items in Closed Epics",
+				"description": "",
+				"jql": "issueFunction in issuesInEpics('issueFunction in epicsOf(\"project = MILES4ALL AND issuetype = Test AND status not in (Inactive, Ready)\") AND status in (Closed, Resolved)') AND status not in (Inactive, Ready, Closed, Resolved)",
 				"favourite": true
 			}
 		},
