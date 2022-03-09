@@ -10,6 +10,15 @@
 			}
 		},
 		{
+			"Id": "321555",
+			"Data": {
+				"name": "BKL Closed Epics w Open Tests",
+				"description": "",
+				"jql": "issueFunction in epicsOf('project = MILES4ALL AND issuetype = Test AND status not in (Inactive, Ready)') AND status in (Closed, Resolved)",
+				"favourite": true
+			}
+		},
+		{
 			"Id": "321243",
 			"Data": {
 				"name": "BKL Epics missing Labels",
