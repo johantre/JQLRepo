@@ -14,11 +14,7 @@ ORDER BY Rank ASC
 
 --Miles board query latest & greatest
 project = MILES4ALL AND 
-issuetype != Test AND 
-issuetype != Pre-Condition AND 
-issuetype != "Test Set" AND 
-issuetype != "Test Execution" AND 
-issuetype != "Test Plan" AND 
+issuetype not in (Test, Pre-Condition, "Test Set", "Test Execution", "Test Plan") AND
 ("Project Specific Labels" is EMPTY OR "Project Specific Labels" != Analysis) AND 
 (Labels is EMPTY OR Labels != UnderRefinement) AND 
 status != Closed 
