@@ -82,6 +82,24 @@
 			}
 		},
 		{
+			"Id": "339565",
+			"Data": {
+				"name": "CtrlPASSTestRunsAssignedMPT NL",
+				"description": "tracking the NL boyz",
+				"jql": "issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, qxz0c91) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, qtd2005) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, qtd0593) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, qt76380) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, qtc6712) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, qtb4864) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, qxz084o)",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "339567",
+			"Data": {
+				"name": "CtrlPASSTestRunsExecutedMPT NL",
+				"description": "tracking the NL boyz",
+				"jql": "issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, '', 'false', qxz0c91) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, '', 'false', qtd2005) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, '', 'false', qtd0593) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, '', 'false', qt76380) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, '', 'false', qtc6712) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, '', 'false', qtb4864) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, '', 'false', qxz084o)",
+				"favourite": true
+			}
+		},
+		{
 			"Id": "274000",
 			"Data": {
 				"name": "CtrlTestsExecutionsPersonalExample",
