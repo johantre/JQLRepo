@@ -15,10 +15,20 @@ ORDER BY Rank ASC
 --Miles board query latest & greatest
 (project = MILES4ALL AND 
 issuetype not in (Test, Pre-Condition, "Test Set", "Test Execution", "Test Plan") AND
-status != Close) OR 
+status != Closed) OR 
 (project = iGRADE AND 
 component in ("DFE/CMS BE", "DFE/CMS NL") AND 
 "Feature Team" = "Market Team BE")  
+ORDER BY Rank ASC
+
+--Miles Sofico board query
+((project = MILES4ALL AND 
+issuetype not in (Test, Pre-Condition, "Test Set", "Test Execution", "Test Plan") AND
+status != Closed) OR 
+(project = iGRADE AND 
+component in ("DFE/CMS BE", "DFE/CMS NL") AND 
+"Feature Team" = "Market Team BE")) AND 
+Labels in (Sofico)
 ORDER BY Rank ASC
 
 --Miles Defect Kanban board "Business View"
