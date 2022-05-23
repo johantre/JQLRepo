@@ -590,7 +590,7 @@
 			"Data": {
 				"name": "MPTTestExecsInTestPlan WKL NL",
 				"description": "",
-				"jql": "project = MILES4ALL AND issue in testPlanTestExecutions(MILES4ALL-6800) ORDER BY rank",
+				"jql": "project = MILES4ALL AND issue in testPlanTestExecutions(MILES4ALL-7846) ORDER BY rank",
 				"favourite": true
 			}
 		},
