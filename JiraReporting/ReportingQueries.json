@@ -253,6 +253,33 @@
 			}
 		},
 		{
+			"Id": "224176",
+			"Data": {
+				"name": "MILES4ALL-Defect Kanban board",
+				"description": "Query to feed MILES4ALL Defect Kanban board",
+				"jql": "project in (MILES4ALL, 'MyBMW@SF') AND (issuetype in (Defect) AND status not in (Inactive, Ready) OR issuetype = Epic AND status != Closed OR issuetype = Story AND status not in (Closed, Resolved) AND 'Epic Link' is not EMPTY AND issuetype not in (Saga)) ORDER BY Rank ASC",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "339582",
+			"Data": {
+				"name": "MILES4ALL-Sofico Sync",
+				"description": "Query to feed MILES4ALL Sofico Sync and Sofico Backlog",
+				"jql": "project = MILES4ALL AND issuetype not in (Test, Pre-Condition, 'Test Set', 'Test Execution', 'Test Plan') AND status != Closed AND Labels in (Sofico) ORDER BY Rank ASC",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "75926",
+			"Data": {
+				"name": "MILES4ALL-Sprintboard",
+				"description": "Query to feed MILES4ALL Sprintboard and Backlog",
+				"jql": "project = MILES4ALL AND issuetype not in (Test, Pre-Condition, 'Test Set', 'Test Execution', 'Test Plan') AND status != Closed ORDER BY Rank ASC",
+				"favourite": true
+			}
+		},
+		{
 			"Id": "264211",
 			"Data": {
 				"name": "MPTDefectsInTestPlan EP BE",
