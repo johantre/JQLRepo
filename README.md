@@ -19,7 +19,7 @@ You need a Q-account and permission to update the JQL's in the json file. (see b
 
 * In here, you can start 2 scripts, and you do that with the following commands 
   - bash jqUpdate.sh
-This will ask you your Jira pass, and *Name* of the JQL that needs to be updated. The *Name* can be found in the ReportingQueries.json file. 
+This will ask you your Jira pass, and *Name* of the JQL that needs to be updated. The *Name* can be found in the [ReportingQueries.json](./blob/main/JiraReporting/ReportingQueries.json) file. 
   - bash jqUpdateAll.sh
 This will ask you your Jira pass only, as it will update *all* queries found in ReportingQueries.json sequencially. 
 
