@@ -21,12 +21,12 @@ You need a Q-account and permission to update the JQL's in the json file. (see b
   - bash jqUpdate.sh
 This will ask you your Jira pass, and *Name* of the JQL that needs to be updated. The *Name* can be found in the [ReportingQueries.json](./JiraReporting/ReportingQueries.json) file. 
   - bash jqUpdateAll.sh
-This will ask you your Jira pass only, as it will update *all* queries found in ReportingQueries.json sequencially. 
+This will ask you your Jira pass only, as it will update *all* queries found in [ReportingQueries.json](./JiraReporting/ReportingQueries.json) sequencially. 
 
 # Shell script structure
-* UpdateJiraQuery.sh does the update in Jira.
-* jqUpdate.sh calls UpdateJiraQuery.sh using ReportingQueries.json as source of the JQL's
-* UpdateJiraQuery.sh calls UpdateJiraQuery.sh using ReportingQueries.json as source of the JQL's
+* [UpdateJiraQuery.sh](./JiraReporting/UpdateJiraQuery.sh) does the update in Jira.
+* [jqUpdate.sh](./JiraReporting/jqUpdate.sh) calls [UpdateJiraQuery.sh](./JiraReporting/UpdateJiraQuery.sh) using [ReportingQueries.json](./JiraReporting/ReportingQueries.json) as source of the JQL requested.
+* [jqUpdateAll.sh](./JiraReporting/jqUpdateAll.sh) calls [UpdateJiraQuery.sh](./JiraReporting/UpdateJiraQuery.sh) using [ReportingQueries.json](./JiraReporting/ReportingQueries.json) as source of *all* the JQL's sequentially.
 
 # Remarks
 * Location of jq on windows is hard coded. A better solution would be having this in your PATH. 
