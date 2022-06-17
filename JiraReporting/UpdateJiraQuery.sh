@@ -1,6 +1,8 @@
 #!/bin/sh
-HOSTNAME="https://atc.bmwgroup.net/jira/rest/api/2/filter/"
-EXTENSION="?expand"
+source lib.sh
+
+HOSTNAME=$(prop 'jira.host' 'env/prod.jira.properties')
+EXTENSION=$(prop 'jira.extention' 'env/prod.jira.properties')
 PASS=$1
 QUERYID=$2
 PAYLOAD=$3

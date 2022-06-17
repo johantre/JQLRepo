@@ -1,7 +1,9 @@
 #!/bin/sh
-JSONQUERYFILE="ReportingQueries.json"
-UPDATEJIRAQUERY="UpdateJiraQuery.sh"
-JQCOMMAND="/C/gitBashCmd/jq-win64.exe"
+source lib.sh
+
+JSONQUERYFILE=$(json)
+UPDATEJIRAQUERY=$(prop 'update.sh' 'env/prod.update.properties')
+JQCOMMAND=$(prop 'update.jq.command' 'env/prod.update.properties')
 
 read -s -p "type in your Q-account pass:" pass 
 printf "\n"
