@@ -1,5 +1,5 @@
 #!/bin/sh
-source lib.sh
+source lib/lib.sh
 
 HOSTNAME=$(prop 'jira.host' 'env/prod.jira.properties')
 EXTENSION=$(prop 'jira.extention' 'env/prod.jira.properties')

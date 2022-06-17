@@ -1,5 +1,5 @@
 #!/bin/sh
-source lib.sh
+source lib/lib.sh
 
 JSONQUERYFILE=$(json)
 UPDATEJIRAQUERY=$(prop 'update.sh' 'env/prod.update.properties')
