@@ -3,7 +3,7 @@ Repo with all JQL's of MILES4ALL Jira project provided with the scripts to updat
 
 # Pre-req's
 * Have jq installed.  [stedolan.github.io](https://stedolan.github.io/jq/download/)
-  - Put the binary "jq-win64.exe" in your C:\gitBashCmd\ folder (check out the [./JiraReporting/env/prod.update.properties](./JiraReporting/env/prod.update.properties) file)
+  - Put the binary "jq-win64.exe" in your C:\gitBashCmd\ folder (check out the [env/prod.update.properties](./JiraReporting/env/prod.update.properties) file)
   - Have Git for windows Bash installed if you're not running from Linux through [WUSS BMWGroup](https://wuss.bmwgroup.net/) Search for Git, locate "Git for Windows". 
 
 * Jira access. The scripts provided use your Q-account to update Jira JQL's.
@@ -26,7 +26,7 @@ This will ask you your Jira pass only, as it will update *all* queries found in 
 * [jqUpdateAll.sh](./JiraReporting/jqUpdateAll.sh) calls [UpdateJiraQuery.sh](./JiraReporting/UpdateJiraQuery.sh) using [ReportingQueries.json](./JiraReporting/ReportingQueries.json) as source of *all* the JQL's sequentially.
 
 # Remarks
-* Location of jq on windows is found in the [./JiraReporting/env/prod.update.properties](./JiraReporting/env/prod.update.properties) file. 
+* Location of jq on windows is found in the [env/prod.update.properties](./JiraReporting/env/prod.update.properties) file. 
 A better solution would be having this in your PATH. 
 However, maintaining PATH for each employee requires admin rights, which isn't sustainable to maintain. 
-* Jira hostname is found in the [./JiraReporting/env/prod.jira.properties](./JiraReporting/env/prod.jira.properties) file.
+* Jira hostname is found in the [env/prod.jira.properties](./JiraReporting/env/prod.jira.properties) file.
