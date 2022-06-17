@@ -25,7 +25,7 @@ This will ask you your Jira pass only, as it will update *all* queries found in 
 * [jqUpdateAll.sh](./JiraReporting/jqUpdateAll.sh) calls [UpdateJiraQuery.sh](./JiraReporting/UpdateJiraQuery.sh) using [ReportingQueries.json](./JiraReporting/ReportingQueries.json) as source of *all* the JQL's sequentially.
 
 # Remarks
-* jq should be available from cli. Check out [./JiraReporting/env/prod.update.properties](./JiraReporting/env/prod.update.properties) file. 
+* jq should be available from cli. Check out [env/prod.update.properties](./JiraReporting/env/prod.update.properties) file. 
 A better solution would be having this in your PATH. 
 However, maintaining PATH for each employee requires admin rights, which isn't sustainable to maintain. 
-* Jira hostname is found in the [./JiraReporting/env/prod.jira.properties](./JiraReporting/env/prod.jira.properties) file.
+* Jira hostname is found in the [env/prod.jira.properties](./JiraReporting/env/prod.jira.properties) file.
