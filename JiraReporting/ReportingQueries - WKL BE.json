@@ -1,0 +1,67 @@
+{
+	"FilterQueries": [
+		{
+			"Id": "264213",
+			"Data": {
+				"name": "MPTDefectsInTestPlan WKL BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan WKL BE') ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "267824",
+			"Data": {
+				"name": "MPTDefectsInTestPlanOpen WKL BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan WKL BE') AND status not in (Closed, Resolved) ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "267850",
+			"Data": {
+				"name": "MPTDefectsInTestPlanOpenCritical WKL BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan WKL BE') AND status not in (Closed, Resolved) AND Priority = critical ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "264217",
+			"Data": {
+				"name": "MPTTestExecsInTestPlan WKL BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in testPlanTestExecutions(MILES4ALL-8083) ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "349193",
+			"Data": {
+				"name": "MPTTestExecsInTestPlanAssignedToCurrentUser WKL BE",
+				"description": "Executions in Test Plan for current user",
+				"jql": "project = MILES4ALL AND issue in testExecWithTestRunsAssignedToUser() AND 'Test Plan' = MILES4ALL-8083 ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "263664",
+			"Data": {
+				"name": "MPTTestsInTestPlan WKL BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE') ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "349546",
+			"Data": {
+				"name": "MPTTestsInTestPlanAssignedToCurrentUserFAIL|EXECUTING|TODO WKL BE",
+				"description": "Tests from Test Executions in TestPlan with Test Runs on current user",
+				"jql": "issue in testExecutionTests('MPTTestExecsInTestPlanAssignedToCurrentUser WKL BE', 'FAIL|EXECUTING|TODO')",
+				"favourite": true
+			}
+		}
+	]
+}

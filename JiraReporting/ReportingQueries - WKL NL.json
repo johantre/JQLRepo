@@ -1,0 +1,85 @@
+{
+	"FilterQueries": [
+		{
+			"Id": "339565",
+			"Data": {
+				"name": "CtrlPASSTestRunsAssignedMPT NL",
+				"description": "tracking the NL boyz",
+				"jql": "issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, qxz0c91) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, qtd2005) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, qtd0593) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, qt76380) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, qtc6712) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, qtb4864) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, qxz084o)",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "339567",
+			"Data": {
+				"name": "CtrlPASSTestRunsExecutedMPT NL",
+				"description": "tracking the NL boyz",
+				"jql": "issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, '', 'false', qxz0c91) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, '', 'false', qtd2005) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, '', 'false', qtd0593) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, '', 'false', qt76380) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, '', 'false', qtc6712) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, '', 'false', qtb4864) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, '', 'false', qxz084o)",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "264214",
+			"Data": {
+				"name": "MPTDefectsInTestPlan WKL NL",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan WKL NL') ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "267852",
+			"Data": {
+				"name": "MPTDefectsInTestPlanOpen WKL NL",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan WKL NL') AND status not in (Closed, Resolved) ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "267851",
+			"Data": {
+				"name": "MPTDefectsInTestPlanOpenCritical WKL NL",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan WKL NL') AND status not in (Closed, Resolved) AND Priority = critical ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "264218",
+			"Data": {
+				"name": "MPTTestExecsInTestPlan WKL NL",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in testPlanTestExecutions(MILES4ALL-7846) ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "349504",
+			"Data": {
+				"name": "MPTTestExecsInTestPlanAssignedToCurrentUser WKL NL",
+				"description": "Executions in Test Plan for current user",
+				"jql": "project = MILES4ALL AND issue in testExecWithTestRunsAssignedToUser() AND 'Test Plan' = MILES4ALL-7846 ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "264205",
+			"Data": {
+				"name": "MPTTestsInTestPlan WKL NL",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL') ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "349547",
+			"Data": {
+				"name": "MPTTestsInTestPlanAssignedToCurrentUserFAIL|EXECUTING|TODO WKL NL",
+				"description": "Tests from Test Executions in TestPlan with Test Runs on current user",
+				"jql": "issue in testExecutionTests('MPTTestExecsInTestPlanAssignedToCurrentUser WKL NL', 'FAIL|EXECUTING|TODO')",
+				"favourite": true
+			}
+		}
+	]
+}

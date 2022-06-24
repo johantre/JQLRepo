@@ -1,7 +1,6 @@
 #!/bin/sh
 source lib/lib.sh
 
-JSONQUERYFILE=$(json)
 UPDATEJIRAQUERY=$(prop 'update.sh' 'env/prod.update.properties')
 JQCOMMAND=$(prop 'update.jq.command' 'env/prod.update.properties')
 
@@ -9,12 +8,14 @@ read -s -p "type in your Q-account pass:" pass
 printf "\n"
 read -p "type the name of your Jira Filter Query:" filterName 
 printf "\n"
-printf "Searching for filter w name = $filterName"
+read -p "type the name of your .json file to search in:" JSONQUERYFILE 
+printf "\n"
+printf "Searching for filter w name = $filterName in $JSONQUERYFILE"
 printf "\n"
 printf "\n"
 
 $JQCOMMAND -c -r --arg name "$filterName" \
-		'.FilterQueries[] | if .Data.name == $name then .Id, .Data else empty end' $JSONQUERYFILE \
+		'.FilterQueries[] | if .Data.name == $name then .Id, .Data else empty end' "$JSONQUERYFILE" \
 		| sed 's/"/\"/g' \
 		| xargs -d '\n' \
 		bash $UPDATEJIRAQUERY $1 $2 $pass
