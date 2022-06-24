@@ -14,8 +14,8 @@ printf "Searching for filter w name = $filterName in $JSONQUERYFILE"
 printf "\n"
 printf "\n"
 
-$JQCOMMAND -c -r --arg name "$filterName" \
-		'.FilterQueries[] | if .Data.name == $name then .Id, .Data else empty end' "$JSONQUERYFILE" \
+argsExecCmd=(-c -r --arg name "$filterName" '.FilterQueries[] | if .Data.name == $name then .Id, .Data else empty end' "$JSONQUERYFILE")
+$JQCOMMAND "${argsExecCmd[@]}" \
 		| sed 's/"/\"/g' \
 		| xargs -d '\n' \
 		bash $UPDATEJIRAQUERY $1 $2 $pass
