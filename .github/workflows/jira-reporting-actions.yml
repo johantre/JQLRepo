@@ -2,7 +2,8 @@ name: jira-reporting-actions
 on: [push]
 jobs:
   update-jira-job:
-    name: Set Jira up to par with repo json
+    runs-on: ubuntu-latest
+    name: babycrawl
     steps:
     - name: test
       run: echo "hello there handsome!"
