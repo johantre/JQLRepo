@@ -2,7 +2,7 @@ name: jira-reporting-actions
 on: [push]
 jobs:
   start-runner-job:
-    runs-on: [self-hosted, ubuntu-latest]
+    runs-on: ubuntu-latest
     name: babycrawl
     steps:
     - run: echo "hello there handsome!"
