@@ -5,6 +5,4 @@ jobs:
     runs-on: [self-hosted, ubuntu-latest]
     name: babycrawl
     steps:
-    - name: test
     - run: echo "hello there handsome!"
-      shell: bash
