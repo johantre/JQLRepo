@@ -1,8 +1,13 @@
 name: jira-reporting-actions
 on: [push]
 jobs:
-  start-runner-job:
+  start-self-runner-job:
+    runs-on: [self-hosted, ubuntu-latest]
+    name: start-runner
+    steps:
+    - run: echo "self-runner-started"
+  do-something-on-runner-job:
     runs-on: ubuntu-latest
-    name: babycrawl
+    name: step-for-in-runner
     steps:
     - run: echo "hello there handsome!"
