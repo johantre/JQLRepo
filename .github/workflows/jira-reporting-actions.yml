@@ -2,7 +2,7 @@ name: jira-reporting-actions
 on: [push]
 jobs:
   update-jira-job:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, ubuntu-latest]
     name: babycrawl
     steps:
     - name: test
