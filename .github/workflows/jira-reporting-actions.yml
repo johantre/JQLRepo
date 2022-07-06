@@ -2,7 +2,7 @@ name: jira-reporting-actions
 on:
   push:
     paths: 
-     - '../../../../*'
+     - '**'
 jobs:
   do-something-on-runner-job:
     runs-on: [self-hosted, windows, x64, LSBE927268-labels]
