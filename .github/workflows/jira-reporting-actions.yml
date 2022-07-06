@@ -1,8 +1,8 @@
 name: jira-reporting-actions
-on: 
-  push:
-    paths: 
-     - '*.json'
+on [push] 
+#  push:
+#    paths: 
+#     - '*.json'
 jobs:
   do-something-on-runner-job:
     runs-on: [self-hosted, windows, x64, LSBE927268-labels]
@@ -10,5 +10,6 @@ jobs:
     steps:
     - run: echo "hello there handsome!"
     - run: whoami
+    - run: pwd
  
  
