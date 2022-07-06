@@ -12,3 +12,5 @@ jobs:
     - run: whoami
     - run: pwd
     - run: ls "../../../../*"
+    - run: git diff-tree --no-commit-id --name-only -r
+    
