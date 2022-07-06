@@ -1,5 +1,5 @@
 name: jira-reporting-actions
-on [push] 
+on: [push] 
 #  push:
 #    paths: 
 #     - '*.json'
