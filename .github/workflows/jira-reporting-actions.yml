@@ -2,7 +2,7 @@ name: jira-reporting-actions
 on:
   push:
     paths: 
-     - 'JiraReporting/*.json'
+     - 'JiraReporting/*'
 jobs:
   do-something-on-runner-job:
     runs-on: [self-hosted, windows, x64, LSBE927268-labels]
@@ -12,5 +12,6 @@ jobs:
     - run: whoami
     - run: pwd
     - run: ls "../../../../*"
+    - run: git
     - run: git diff-tree --no-commit-id --name-only -r
     
