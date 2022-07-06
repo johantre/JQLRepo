@@ -1,7 +1,8 @@
 name: jira-reporting-actions
-on: [push]
-  paths: 
-   - '*.json'
+on: 
+  push:
+    paths: 
+     - '*.json'
 jobs:
   do-something-on-runner-job:
     runs-on: [self-hosted, windows, x64, LSBE927268-labels]
