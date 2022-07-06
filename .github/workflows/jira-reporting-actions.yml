@@ -2,7 +2,7 @@ name: jira-reporting-actions
 on: [push]
 jobs:
   do-something-on-runner-job:
-    runs-on: [self-hosted, windows-latest]
+    runs-on: LSBE927268
     name: step-for-in-runner
     steps:
     - run: echo "hello there handsome!"
