@@ -11,6 +11,6 @@ jobs:
     - run: echo "hello there handsome!"
     - run: whoami
     - run: pwd
-    - run: ls -lst ../../../../*
+    - run: ls "../../../../*"
  
  
