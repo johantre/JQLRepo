@@ -41,7 +41,12 @@ jobs:
         run: |
           for file in ${{ steps.changed-files-eol.outputs.all_changed_files }}; do
             echo "$file was changed"
-          done          
+          done
+      - name: exotic for w tr
+        run: |
+          for file in $(tr ',' '\n' <<< "${{ steps.changed-files-eol.outputs.all_changed_files }}"); do echo "$file"; done
+
+#          for v in $(tr ',' '\n' <<< "$var") ; do something_with "$v" ; done
 #    outputs:
 #      all: ${{ steps.changes.outputs.all}}
 #      ts: ${{ steps.changes.outputs.ts }}
