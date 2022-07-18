@@ -12,10 +12,11 @@ jobs:
     - run: whoami
     - run: pwd
     - run: ls "../../../../*"
-  changedfiles:
+  changedfiles-job:
     runs-on: [atc-ubuntu-latest]
+    steps:
     # Map a step output to a job output
-       - name: Get changed files using defaults
+      - name: Get changed files using defaults
          id: changed-files
          uses: tj-actions/changed-files@v23.1
       - name: Get changed files using a comma separator
@@ -23,7 +24,6 @@ jobs:
         uses: tj-actions/changed-files@v23.1
         with:
           separator: ","
-
 #    outputs:
 #      all: ${{ steps.changes.outputs.all}}
 #      ts: ${{ steps.changes.outputs.ts }}
