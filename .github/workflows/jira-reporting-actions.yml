@@ -13,7 +13,7 @@ jobs:
     - run: pwd
     - run: ls "../../../../*"
   changedfiles:
-    runs-on: [Enterprise, self-hosted, linux, x64, atc-ubuntu-latest, atc-ubuntu-20.04, dependabot]
+    runs-on: [atc-ubuntu-latest]
     # Map a step output to a job output
     outputs:
       all: ${{ steps.changes.outputs.all}}
@@ -29,7 +29,7 @@ jobs:
           echo "::set-output name=all::$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | xargs)"
           echo "::set-output name=ts::$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | grep .ts$ | xargs)"
   lint:
-    runs-on: [Enterprise, self-hosted, linux, x64, atc-ubuntu-latest, atc-ubuntu-20.04, dependabot]
+    runs-on: [atc-ubuntu-latest]
     # require the first job to have ran
     needs: changedfiles
     # only run there are changed files
