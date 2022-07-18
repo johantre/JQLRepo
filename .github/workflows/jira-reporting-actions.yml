@@ -25,17 +25,17 @@ jobs:
         uses: tj-actions/changed-files@v23.1
         with:
           files: |
-            *.json
+            **/*.json
           files_ignore: |
             *.yml
-      - name: Get changed files using a comma separator
+      - name: Get changed files using an eol separator
         id: changed-files-eol
         uses: tj-actions/changed-files@v23.1
         with:
           files: |
-            *.json
+            **/*.json
           files_ignore: |
-            *.yml
+            **/*.yml
           separator: "\n"
       - name: List all changed files
         run: |
