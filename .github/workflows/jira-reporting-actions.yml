@@ -26,14 +26,20 @@ jobs:
         with:
           files: |
             *.json
+          files_ignore: |
+            *.yml
       - name: Get changed files using a comma separator
-        id: changed-files-comma
+        id: changed-files-eol
         uses: tj-actions/changed-files@v23.1
         with:
-          separator: ","
+          files: |
+            *.json
+          files_ignore: |
+            *.yml
+          separator: "\n"
       - name: List all changed files
         run: |
-          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+          for file in ${{ steps.changed-files-eol.outputs.all_changed_files }}; do
             echo "$file was changed"
           done          
 #    outputs:
