@@ -18,17 +18,21 @@ jobs:
     # Map a step output to a job output
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - name: Get changed files using defaults
         id: changed-files
         uses: tj-actions/changed-files@v23.1
-        with:
-          fetch-depth: 0
       - name: Get changed files using a comma separator
         id: changed-files-comma
         uses: tj-actions/changed-files@v23.1
         with:
-          fetch-depth: 0
           separator: ","
+      - name: List all changed files
+        run: |
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            echo "$file was changed"
+          done          
 #    outputs:
 #      all: ${{ steps.changes.outputs.all}}
 #      ts: ${{ steps.changes.outputs.ts }}
