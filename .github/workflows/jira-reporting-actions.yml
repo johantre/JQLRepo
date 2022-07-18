@@ -2,7 +2,7 @@ name: jira-reporting-actions
 on:
   push:
     paths: 
-     - 'JiraReporting/*.json'
+     - '.github/workflows/*.json'
 jobs:
   do-something-on-runner-job:
     runs-on: [self-hosted, windows, x64, LSBE927268-labels]
@@ -19,6 +19,8 @@ jobs:
       all: ${{ steps.changes.outputs.all}}
       ts: ${{ steps.changes.outputs.ts }}
     steps:
+      - name: pre-run check
+        run: ls -lst
         # Make sure we have some code to diff.
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -28,6 +30,8 @@ jobs:
         run: |
           echo "::set-output name=all::$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | xargs)"
           echo "::set-output name=ts::$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | grep .ts$ | xargs)"
+      - name: post-run check
+        run: ls -lst
   lint:
     runs-on: [atc-ubuntu-latest]
     # require the first job to have ran
