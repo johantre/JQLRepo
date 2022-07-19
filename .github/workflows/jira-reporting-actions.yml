@@ -29,6 +29,7 @@ jobs:
           files_ignore: |
             **/*.yml
           separator: ","
+          quotepath: false
       - name: List all changed files
         run: |
            echo ${{ steps.changed-files-eol.outputs.all_changed_files }}
