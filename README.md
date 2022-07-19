@@ -35,12 +35,12 @@ At the moment of writing, we can say this small project can serve to keep JQL qu
 
 * The current payload files all represent a Jira Dashboard for testing purposes. 
 
-* ["ReportingQueries - EP BE.json"]("./JiraReporting/ReportingQueries - EP BE.json")
-* ["ReportingQueries - EP NL.json"]("./JiraReporting/ReportingQueries - EP NL.json")
-* ["ReportingQueries - FNC BE.json"]("./JiraReporting/ReportingQueries - FNC BE.json")
-* ["ReportingQueries - FNC NL.json"]("./JiraReporting/ReportingQueries - FNC NL.json")
-* ["ReportingQueries - WKL BE.json"]("./JiraReporting/ReportingQueries - WKL BE.json")
-* ["ReportingQueries - WKL NL.json"]("./JiraReporting/ReportingQueries - WKL NL.json")
+* ["ReportingQueries%20-%20EP BE.json"]("./JiraReporting/ReportingQueries%20-%20EP BE.json")
+* ["ReportingQueries%20-%20EP NL.json"]("./JiraReporting/ReportingQueries%20-%20EP NL.json")
+* ["ReportingQueries%20-%20FNC BE.json"]("./JiraReporting/ReportingQueries%20-%20FNC BE.json")
+* ["ReportingQueries%20-%20FNC NL.json"]("./JiraReporting/ReportingQueries%20-%20FNC NL.json")
+* ["ReportingQueries%20-%20WKL BE.json"]("./JiraReporting/ReportingQueries%20-%20WKL BE.json")
+* ["ReportingQueries%20-%20WKL NL.json"]("./JiraReporting/ReportingQueries%20-%20WKL NL.json")
 * [ReportingQueries.json](./JiraReporting/ReportingQueries.json)
   
 # Remarks
