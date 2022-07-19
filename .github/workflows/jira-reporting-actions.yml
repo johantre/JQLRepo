@@ -32,8 +32,8 @@ jobs:
       - name: List all changed files
         run: |
            echo ${{ steps.changed-files-eol.outputs.all_changed_files }}
-           echo pwd
-           echo whoami
+           pwd
+           whoami
 #          for file in ${{ steps.changed-files-eol.outputs.all_changed_files }}; do
 #            echo "$file was changed"
 #          done
