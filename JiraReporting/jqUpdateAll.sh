@@ -10,9 +10,6 @@ JQUPDATEJSON=$(prop 'update.sh.jq.json' $prodprops)
 printf "Updating all *.json JQueries found in $DIR folder..."
 printf "\n"
 
-
-#find $DIR -iname "*.json" | while read JSONQUERYFILE
-
 find $DIR -iname "*.json" -type f -exec basename {} \; | while read JSONQUERYFILE
 
 do
