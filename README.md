@@ -32,16 +32,7 @@ This will ask you nothing at all and it will update *all* JQL payloads queries f
 * The initial intend of this project is to have all queries that are holding together and feeding a Jira Dashboard under source control.
 All queries are found in those payload files contain the json payloads to update Jira.
 At the moment of writing, we can say this small project can serve to keep JQL queries under source control.  Whatever the reason it is. 
-
 * The current payload files all represent a Jira Dashboard for testing purposes. 
-
-* ["ReportingQueries%20-%20EP BE.json"]("./JiraReporting/ReportingQueries%20-%20EP BE.json")
-* ["ReportingQueries%20-%20EP NL.json"]("./JiraReporting/ReportingQueries%20-%20EP NL.json")
-* ["ReportingQueries%20-%20FNC BE.json"]("./JiraReporting/ReportingQueries%20-%20FNC BE.json")
-* ["ReportingQueries%20-%20FNC NL.json"]("./JiraReporting/ReportingQueries%20-%20FNC NL.json")
-* ["ReportingQueries%20-%20WKL BE.json"]("./JiraReporting/ReportingQueries%20-%20WKL BE.json")
-* ["ReportingQueries%20-%20WKL NL.json"]("./JiraReporting/ReportingQueries%20-%20WKL NL.json")
-* [ReportingQueries.json](./JiraReporting/ReportingQueries.json)
   
 # Remarks
 * jq should be available from cli. Check out [env/prod.update.properties](./JiraReporting/env/prod.update.properties) file. 
