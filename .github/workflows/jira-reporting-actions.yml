@@ -33,12 +33,12 @@ jobs:
       - name: List all changed files
         run: |
            echo ${{ steps.changed-files-eol.outputs.all_changed_files }}
-           ls
 #          for file in ${{ steps.changed-files-eol.outputs.all_changed_files }}; do
 #            echo "$file was changed"
 #          done
       - name: exotic for w tr
         run: |
+           cd JiraReporting
 #          printf "${{ steps.changed-files-eol.outputs.all_changed_files }}"
 #          echo "Files changed array"
 #          printf "\n"
