@@ -1,8 +1,11 @@
 #!/bin/sh
-source lib/lib.sh
+DIR=$(dirname $0)
+source "$DIR/lib/lib.sh"
 
-HOSTNAME=$(prop 'jira.host' 'env/prod.jira.properties')
-EXTENSION=$(prop 'jira.extention' 'env/prod.jira.properties')
+jiraprops="$DIR/env/prod.jira.properties"
+
+HOSTNAME=$(prop 'jira.host' $jiraprops)
+EXTENSION=$(prop 'jira.extention' $jiraprops)
 
 QUERYID=$2
 PAYLOAD=$3

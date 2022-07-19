@@ -1,16 +1,22 @@
 #!/bin/sh
-source lib/lib.sh
+DIR=$(dirname $0)
+source "$DIR/lib/lib.sh"
 
-UPDATEJIRAQUERY=$(prop 'update.sh' 'env/prod.update.properties')
-JQUPDATEJSON=$(prop 'update.sh.jq.json' 'env/prod.update.properties')
+prodprops="$DIR/env/prod.update.properties"
 
-printf "Updating all Queries found *.json in ./ folder..."
+UPDATEJIRAQUERY=$(prop 'update.sh' $prodprops)
+JQUPDATEJSON=$(prop 'update.sh.jq.json' $prodprops)
+
+printf "Updating all *.json JQueries found in $DIR folder..."
 printf "\n"
 
-find . -iname "*.json" | while read JSONQUERYFILE
+
+#find $DIR -iname "*.json" | while read JSONQUERYFILE
+
+find $DIR -iname "*.json" -type f -exec basename {} \; | while read JSONQUERYFILE
+
 do
 	echo "For file: $JSONQUERYFILE" 
 	printf "\n"
-	bash $JQUPDATEJSON "$JSONQUERYFILE"
-
+	bash $DIR"/"$JQUPDATEJSON "$JSONQUERYFILE"
 done 
