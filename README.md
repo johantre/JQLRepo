@@ -33,14 +33,14 @@ This will ask you nothing at all and it will update *all* JQL payloads queries f
 All queries are found in those payload files contain the json payloads to update Jira.
 At the moment of writing, we can say this small project can serve to keep JQL queries under source control.  Whatever the reason it is. 
 * The current payload files all represent a Jira Dashboard for testing purposes. 
- - [ReportingQueries.json](./JiraReporting/payload/ReportingQueries.json) for general queries.
- - [ReportingQueries-WKL-BE.json](./JiraReporting/payload/ReportingQueries-WKL-BE.json) for the weekly releases dashboard BE.
- - [ReportingQueries-WKL-NL.json](./JiraReporting/payload/ReportingQueries-WKL-NL.json) for the weekly releases dashboard NL.
- - [ReportingQueries-FNC-BE.json](./JiraReporting/payload/ReportingQueries-FNC-BE.json) for the functional releases dashboard NL.
- - [ReportingQueries-FNC-NL.json](./JiraReporting/payload/ReportingQueries-FNC-NL.json) for the functional releases dashboard NL.
- - [ReportingQueries-EP-NL.json](./JiraReporting/payload/ReportingQueries-EP-BE.json) for the Emergency Patch releases dashboard NL.
- - [ReportingQueries-EP-NL.json](./JiraReporting/payload/ReportingQueries-EP-NL.json) for the Emergency Patch releases dashboard NL.
-  
+  - [ReportingQueries.json](./JiraReporting/payload/ReportingQueries.json) for general queries.
+  - [ReportingQueries-WKL-BE.json](./JiraReporting/payload/ReportingQueries-WKL-BE.json) for the weekly releases dashboard BE.
+  - [ReportingQueries-WKL-NL.json](./JiraReporting/payload/ReportingQueries-WKL-NL.json) for the weekly releases dashboard NL.
+  - [ReportingQueries-FNC-BE.json](./JiraReporting/payload/ReportingQueries-FNC-BE.json) for the functional releases dashboard NL.
+  - [ReportingQueries-FNC-NL.json](./JiraReporting/payload/ReportingQueries-FNC-NL.json) for the functional releases dashboard NL.
+  - [ReportingQueries-EP-NL.json](./JiraReporting/payload/ReportingQueries-EP-BE.json) for the Emergency Patch releases dashboard NL.
+  - [ReportingQueries-EP-NL.json](./JiraReporting/payload/ReportingQueries-EP-NL.json) for the Emergency Patch releases dashboard NL.
+
 # Remarks
 * jq should be available from cli. Check out [env/prod.update.properties](./JiraReporting/env/prod.update.properties) file. 
 A better solution would be having this in your PATH. 
