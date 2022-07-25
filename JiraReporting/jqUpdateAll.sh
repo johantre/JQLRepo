@@ -7,10 +7,10 @@ prodprops="$DIR/env/prod.update.properties"
 UPDATEJIRAQUERY=$(prop 'update.sh' $prodprops)
 JQUPDATEJSON=$(prop 'update.sh.jq.json' $prodprops)
 
-printf "Updating all *.json JQueries found in $DIR folder..."
+printf "Updating all *.json JQueries found in $DIR/payload folder..."
 printf "\n"
 
-find $DIR -iname "*.json" -type f -exec basename {} \; | while read JSONQUERYFILE
+find $DIR/payload -iname "*.json" -type f -exec basename {} \; | while read JSONQUERYFILE
 
 do
 	echo "For file: $JSONQUERYFILE" 

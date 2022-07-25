@@ -11,10 +11,10 @@ read -p "type the name of your Jira Filter Query:" filterName
 printf "\n"
 read -p "type the name of your .json file to search in:" JSONQUERYFILE 
 printf "\n"
-printf "Searching for filter w name = $filterName in $DIR/$JSONQUERYFILE"
+printf "Searching for filter w name = $filterName in $DIR/payload/$JSONQUERYFILE"
 printf "\n"
 
-	argsExecCmd=(-c -r --arg name "$filterName" '.FilterQueries[] | if .Data.name == $name then .Id, .Data else empty end' "$DIR/$JSONQUERYFILE")
+	argsExecCmd=(-c -r --arg name "$filterName" '.FilterQueries[] | if .Data.name == $name then .Id, .Data else empty end' "$DIR/payload/$JSONQUERYFILE")
 	$JQCOMMAND "${argsExecCmd[@]}" \
 			| sed 's/"/\"/g' \
 			| xargs -d '\n' \
