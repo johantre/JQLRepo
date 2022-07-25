@@ -9,9 +9,8 @@ You need a technical Q-account and permission to update the JQL's in the json fi
 std input isn't required to fetch user:pass, as the script use a base64 encoded account for Jira access. 
 
 # Usage
-* In terminal cli
+* In terminal cli 
   - From anywhere you like, call the scripts below preceding the scripts with the path to their location. 
-
 * In here, you can start 3 scripts, and you do that with the following commands 
   - bash jqUpdate.sh
 This will ask you a *Name* of the JQL payload that needs to be updated in Jira and the name of the *.json* where to find it. Example of such *Name* can be found in the [ReportingQueries.json](./JiraReporting/ReportingQueries.json) file. 
