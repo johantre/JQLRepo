@@ -25,7 +25,7 @@ jobs:
         uses: tj-actions/changed-files@v24
         with:
           files: |
-            *.json |
+            **/*.json |
           files_ignore: |
             **/*.yml |
           separator: |
