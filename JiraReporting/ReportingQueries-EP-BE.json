@@ -1,0 +1,114 @@
+{
+	"FilterQueries": [
+		{
+			"Id": "275982",
+			"Data": {
+				"name": "CtrlTestsInTestPlanAllButPASS EP BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan EP BE', 'TODO|EXECUTING|FAIL|ABORTED|BLOCKED') ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "275977",
+			"Data": {
+				"name": "CtrlTestsInTestPlanAllTODO EP BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan EP BE', TODO) ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "275976",
+			"Data": {
+				"name": "CtrlTestsInTestPlanAllTODOUnassigned EP BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan EP BE', TODO, __NULL__) ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "275979",
+			"Data": {
+				"name": "CtrlTestsInTestPlanFAIL EP BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan EP BE', FAIL) ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "264211",
+			"Data": {
+				"name": "MPTDefectsInTestPlan EP BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan EP BE') ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "267821",
+			"Data": {
+				"name": "MPTDefectsInTestPlanOpen EP BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan EP BE') AND status not in (Closed, Resolved) ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "267848",
+			"Data": {
+				"name": "MPTDefectsInTestPlanOpenCritical EP BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan EP BE') AND status not in (Closed, Resolved) AND Priority = critical ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "268002",
+			"Data": {
+				"name": "MPTDefectsInTestPlanOpenMPT EP BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan EP BE') AND status not in (Closed, Resolved) AND labels not in (Sofico) ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "268000",
+			"Data": {
+				"name": "MPTDefectsInTestPlanOpenSofico EP BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan EP BE') AND status not in (Closed, Resolved) AND labels in (Sofico) ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "264215",
+			"Data": {
+				"name": "MPTTestExecsInTestPlan EP BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in testPlanTestExecutions(MILES4ALL-4549) AND status not in (Closed) ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "263085",
+			"Data": {
+				"name": "MPTTestsInTestPlan EP BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan EP BE') ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "267825",
+			"Data": {
+				"name": "MPTTestsInTestPlanOpen EP BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan EP BE', 'FAIL|EXECUTING|BLOCKED|ABORTED|N/A|TODO') ORDER BY rank",
+				"favourite": true
+			}
+		}
+	]
+}
+
+

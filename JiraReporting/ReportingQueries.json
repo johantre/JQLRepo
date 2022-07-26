@@ -1,0 +1,123 @@
+{
+	"FilterQueries": [
+		{
+			"Id": "274301",
+			"Data": {
+				"name": "xDontLeaveHomeWithoutIt",
+				"description": "",
+				"jql": "issue in testExecWithTestRunsAssignedToUser()",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "321555",
+			"Data": {
+				"name": "BKL Closed Epics w Open items",
+				"description": "",
+				"jql": "issueFunction in epicsOf('project = MILES4ALL AND status not in (Inactive, Ready, Closed, Resolved)') AND status in (Closed, Resolved)",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "321243",
+			"Data": {
+				"name": "BKL Epics missing Labels",
+				"description": "",
+				"jql": "project = MILES4ALL AND issuetype = Epic AND labels not in (Technical_BE, Technical_NL, NL, BE)",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "292583",
+			"Data": {
+				"name": "BKL Open Epics of Closed Sagas",
+				"description": "",
+				"jql": "issueFunction in portfolioChildrenOf('project = MILES4ALL and issuetype = Saga and status in (Closed, Resolved)') AND status not in (Closed, Resolved)",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "321236",
+			"Data": {
+				"name": "BKL Open Epics w.o. Issues",
+				"description": "",
+				"jql": "project = MILES4ALL AND issuetype = Epic AND status not in (Closed, Resolved) AND issueFunction not in epicsOf('project = MILES4ALL')",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "321556",
+			"Data": {
+				"name": "BKL Open items in Closed Epics",
+				"description": "",
+				"jql": "issueFunction in issuesInEpics('issueFunction in epicsOf(\"project = MILES4ALL AND issuetype = Test AND status not in (Inactive, Ready)\") AND status in (Closed, Resolved)') AND status not in (Inactive, Ready, Closed, Resolved)",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "292588",
+			"Data": {
+				"name": "BKL Open Sagas w ONLY Closed Epics",
+				"description": "",
+				"jql": "issueFunction in portfolioParentsOf('project = MILES4ALL and issuetype = Epic and status in (Closed, Resolved)') AND status not in (Closed, Resolved) AND issueFunction not in portfolioParentsOf('project = MILES4ALL and issuetype = Epic and status not in (Closed, Resolved)') AND status not in (Closed, Resolved)",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "274005",
+			"Data": {
+				"name": "CtrlMyTestExecutions",
+				"description": "",
+				"jql": "issue in testExecWithTestRunsAssignedToUser()",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "274004",
+			"Data": {
+				"name": "CtrlMyTestsExecutionsNotClosed",
+				"description": "",
+				"jql": "issue in testExecWithTestRunsAssignedToUser() AND status != Closed",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "274000",
+			"Data": {
+				"name": "CtrlTestsExecutionsPersonalExample",
+				"description": "",
+				"jql": "issue in testExecWithTestRunsAssignedToUser(qtd1158, TODO)",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "224176",
+			"Data": {
+				"name": "MILES4ALL-Defect Kanban board",
+				"description": "Query to feed MILES4ALL Defect Kanban board",
+				"jql": "project in (MILES4ALL, 'MyBMW@SF') AND (issuetype in (Defect) AND status not in (Inactive, Ready) OR issuetype = Epic AND status != Closed OR issuetype = Story AND status not in (Closed, Resolved) AND 'Epic Link' is not EMPTY AND issuetype not in (Saga)) ORDER BY Rank ASC",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "339582",
+			"Data": {
+				"name": "MILES4ALL-Sofico Sync",
+				"description": "Query to feed MILES4ALL Sofico Sync and Sofico Backlog",
+				"jql": "project = MILES4ALL AND issuetype not in (Test, Pre-Condition, 'Test Set', 'Test Execution', 'Test Plan') AND status != Closed AND Labels in (Sofico) ORDER BY Rank ASC",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "75926",
+			"Data": {
+				"name": "MILES4ALL-Sprintboard",
+				"description": "Query to feed MILES4ALL Sprintboard and Backlog",
+				"jql": "project = MILES4ALL AND issuetype not in (Test, Pre-Condition, 'Test Set', 'Test Execution', 'Test Plan') AND status != Closed ORDER BY Rank ASC",
+				"favourite": true
+			}
+		}
+	]
+}
+
+
