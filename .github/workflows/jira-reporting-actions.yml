@@ -23,7 +23,7 @@ jobs:
       - name: Get changed files using separator
         id: changed-files-eol
         uses: tj-actions/changed-files@v24
-        with: 
+        with: |
           files: |
             '**/*.json' |
           files_ignore: |
