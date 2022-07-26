@@ -25,9 +25,7 @@ jobs:
         uses: tj-actions/changed-files@v24
         with:
           files: |
-            **/*.json
-          files_ignore: |
-            **/*.yml
+            *.json
       - name: List all changed files
         run: |
            echo ${{ steps.changed-files-eol.outputs.all_changed_files }}
