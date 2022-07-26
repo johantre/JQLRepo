@@ -23,11 +23,11 @@ jobs:
       - name: Get changed files using separator
         id: changed-files-eol
         uses: tj-actions/changed-files@v24
-        with: |
+        with:
           files: |
-            '**/*.json' |
+            '**/*.json'
           files_ignore: |
-            '**/*.yml' |
+            '**/*.yml'
       - name: List all changed files
         run: |
            echo ${{ steps.changed-files-eol.outputs.all_changed_files }}
