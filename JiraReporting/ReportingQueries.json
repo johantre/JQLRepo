@@ -112,12 +112,11 @@
 			"Id": "75926",
 			"Data": {
 				"name": "MILES4ALL-Sprintboard",
-				"description": "Query to feed MILES4ALL Sprintboard and Backlog",
+				"description": "Query to feed MILES4ALL Sprintboard and Backlog!",
 				"jql": "project = MILES4ALL AND issuetype not in (Test, Pre-Condition, 'Test Set', 'Test Execution', 'Test Plan') AND status != Closed ORDER BY Rank ASC",
 				"favourite": true
 			}
 		}
 	]
 }
-
 
