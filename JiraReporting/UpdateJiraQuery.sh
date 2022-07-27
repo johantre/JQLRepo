@@ -5,7 +5,7 @@ source "$DIR/lib/lib.sh"
 jiraprops="$DIR/env/prod.jira.properties"
 
 HOSTNAME=$(prop 'jira.host' $jiraprops)
-EXTENSION=$(prop 'jira.extention' $jiraprops)
+EXTENSION=$(prop 'jira.extension' $jiraprops)
 JIRAUSER=$(prop 'jira.user' $jiraprops)
 JIRAPASS=$(prop 'jira.pass' $jiraprops)
 
