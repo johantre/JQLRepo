@@ -34,7 +34,7 @@ jobs:
     if: ${{steps.changed-files-eol.outputs.all_changed_files}}
     steps:
       - name: echo changed files
-        run: 
+        run: |
            echo "List of files that were changed from lint job: "
            for file in ${{ steps.changed-files-eol.outputs.all_changed_files }}; do
              echo "$file was changed"
