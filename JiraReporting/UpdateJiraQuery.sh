@@ -14,8 +14,10 @@ PAYLOAD=$3
 printf "queryId=$QUERYID and payload=$PAYLOAD"
 printf "\n"
 
-echo curl -H "Authorization: Basic $USERBASE64==" -X PUT --data "$PAYLOAD" -H "Content-Type: application/json" $HOSTNAME$QUERYID$EXTENSION
+echo curl -u qqmibi4:g#cZrpo8onqvaij -X PUT --data "$PAYLOAD" -H "Content-Type: application/json" $HOSTNAME$QUERYID$EXTENSION
 printf "\n"
 
-curl -H "Authorization: Basic $USERBASE64==" -X PUT --data "$PAYLOAD" -H "Content-Type: application/json" $HOSTNAME$QUERYID$EXTENSION
+curl -u qqmibi4:g#cZrpo8onqvaij -X PUT --data "$PAYLOAD" -H "Content-Type: application/json" $HOSTNAME$QUERYID$EXTENSION
+
+
 
