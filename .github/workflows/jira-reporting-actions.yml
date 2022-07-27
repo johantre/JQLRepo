@@ -25,6 +25,6 @@ jobs:
         run: |
            echo "List of files that were changed: "
            for file in ${{ steps.changed-files-eol.outputs.all_changed_files }}; do
-             echo "$file was changed"
+             bash ./JiraReporting/jqUpdateJson.sh $file
            done
 
