@@ -6,6 +6,7 @@ jiraprops="$DIR/env/prod.jira.properties"
 
 HOSTNAME=$(prop 'jira.host' $jiraprops)
 EXTENSION=$(prop 'jira.extention' $jiraprops)
+USERBASE64=$(prop 'jira.user.base64' $jiraprops)
 
 QUERYID=$2
 PAYLOAD=$3
@@ -15,4 +16,4 @@ printf "queryId=$QUERYID"
 printf "\n"
 printf "payload=$PAYLOAD"
 
-#curl -H "Authorization: Basic UVhaMUlCTDpTdGVlbndlZzE2OTk4MTBOYXphcmV0aA==" -X PUT --data "$PAYLOAD" -H "Content-Type: application/json" $HOSTNAME$QUERYID$EXTENSION
+#curl -H "Authorization: Basic $USERBASE64==" -X PUT --data "$PAYLOAD" -H "Content-Type: application/json" $HOSTNAME$QUERYID$EXTENSION
