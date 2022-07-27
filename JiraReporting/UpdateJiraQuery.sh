@@ -12,8 +12,8 @@ QUERYID=$2
 PAYLOAD=$3
 
 printf "\n"
-printf "queryId=$QUERYID"
-printf "\n"
-printf "payload=$PAYLOAD"
+printf "queryId=$QUERYID and payload=$PAYLOAD"
+
+echo curl -H "Authorization: Basic $USERBASE64==" -X PUT --data "$PAYLOAD" -H "Content-Type: application/json" $HOSTNAME$QUERYID$EXTENSION
 
 curl -H "Authorization: Basic $USERBASE64==" -X PUT --data "$PAYLOAD" -H "Content-Type: application/json" $HOSTNAME$QUERYID$EXTENSION
