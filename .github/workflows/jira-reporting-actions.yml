@@ -21,26 +21,12 @@ jobs:
           files_ignore: |
             **/*.yml
       - name: List all changed files
+        if: steps.changed-files-eol.outputs.any_changed == 'true'
         run: |
            echo "List of files that were changed: "
            for file in ${{ steps.changed-files-eol.outputs.all_changed_files }}; do
              echo "$file was changed"
            done
-  lint:
-    runs-on: [atc-ubuntu-latest]
-    # require the first job to have ran
-    needs: changed-files
-    # only run there are changed files
-    if: steps.changed-files-eol.outputs.any_changed == 'true'
-    steps:
-      - name: echo changed files
-        run: |
-           echo "List of files that were changed from lint job: "
-           for file in ${{ steps.changed-files-eol.outputs.all_changed_files }}; do
-             echo "$file was changed"
-           done
-
-
 #      - name: exotic for w tr
 #        run: |
 #          printf "${{ steps.changed-files-eol.outputs.all_changed_files }}"
