@@ -19,14 +19,14 @@ In order to have this project able to update *your* Jira project, you'll need to
   - GitHub Actions will update Jira with all JQL's it finds in a changed json files it sees at git push time
   
 # Usage
-* In terminal cli 
+* In terminal cli\
   - From anywhere you like, call the scripts below preceding the scripts with the path to their location. 
-* In here, you can start 3 scripts, and you do that with the following commands 
-  - bash [jqUpdate.sh](./JiraReporting/jqUpdate.sh)
+* In here, you can start 3 scripts, and you do that with the following commands\
+  - bash [jqUpdate.sh](./JiraReporting/jqUpdate.sh)\
 This will ask you a *Name* of the JQL payload that needs to be updated in Jira and the name of the *.json* where to find it. Example of such *Name* can be found in the [ReportingQueries.json](./JiraReporting/ReportingQueries.json) file. 
-  - bash [jqUpdateJson.sh](./JiraReporting/jqUpdateJson.sh) *.json*
+  - bash [jqUpdateJson.sh](./JiraReporting/jqUpdateJson.sh) *.json*\
 This is a version of the script that only requires a *.json* file. This script will update all JQL payloads found in the *.json* file given as the first and only argument. 
-  - bash [jqUpdateAll.sh](./JiraReporting/jqUpdateAll.sh)
+  - bash [jqUpdateAll.sh](./JiraReporting/jqUpdateAll.sh)\
 This will ask you nothing at all and it will sequencially update *all* JQL payloads queries found of all *.json* files found in [payload](./JiraReporting/payload/) folder. 
 
 # Shell script structure
@@ -63,4 +63,6 @@ Specifically this file is **included in .gitignore**, to prevent committing it t
 The credentials should be stored in following properties like example below:\
   - **jira.user=Qxxxx**
   - **jira.pass=xyzwhatever**
-* Running the scripts from within a runner, requires you to have **GitHub Secrets** set: **JIRA_USER** and **JIRA_PASS** with the self-explanatory content. 
+* Running the scripts from within a runner, requires you to have **GitHub Secrets** set with the self-explanatory content:
+  -  **JIRA_USER** 
+  -  **JIRA_PASS** 
