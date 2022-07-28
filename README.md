@@ -45,11 +45,14 @@ At the moment of writing, we can say this small project can serve to keep JQL qu
 A better solution would be having this in your PATH. 
 However, maintaining PATH for each employee requires admin rights, which isn't sustainable to maintain. 
 * Jira hostname is found in the [env/prod.jira.properties](./JiraReporting/env/prod.jira.properties) file.
-* At the moment of writing, this project works under windows and ubuntu runners. The only difference can be found in the jq setup.
-Ubuntu has this pre-installed, windows needs a little help. (More info on the windows branch of this project.) 
-Counter expectations, this does not mean you can  use self-hosted runners on windows as these runs in Powershell. 
-Under the hood, the script is uses commands like xargs etc, which aren't supported by Powershell.
-Running the scripts from command line however, is possible. The windows branch will be kept alive for this purpose: testing locally through WSL2 or Git Bash. 
-* Running scripts locally (not in a runner) requires you to have a **env/prod.jira.secret.properties** in order to fetch your credentials. 
+* At the moment of writing, this project works under only ubuntu runners. 
+Under the hood, the scripts uses commands like xargs etc, which aren't supported by Powershell.
+Running the scripts from command line however, is possible in windows. The windows branch will be kept alive for this purpose: testing locally through WSL/WSL2 or Git Bash. 
+The difference in between windows & ubuntu is the jq setup. 
+Ubuntu comes with jq pre-installed, windows needs a little help. (More info on the windows branch of this project.) 
+* Not that running locally (not in a runner) requires you to have a **env/prod.jira.secret.properties** in order to fetch your credentials. 
+The credentials should be stored in following properties like example below: 
+  - **jira.user=Qxxxx**
+  - **jira.pass=xyzwhatever**
 Specifically this file is included in .gitignore, as this *should not* be residing in your repo. 
 * Running the scripts from within a runner, requires you to have **GitHub Secrets** set: **JIRA_USER** and **JIRA_PASS** with the self-explanotory content. 
