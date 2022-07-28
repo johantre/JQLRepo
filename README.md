@@ -1,8 +1,9 @@
 # JQLRepo
 Repo with all JQL's provided in the .json payload files.\
-The scripts to update Jira using the .json payload files is provided as well.\\
+The scripts to update Jira using the .json payload files is provided as well.\
+\
 This project enables anyone to keep track of the Jira queries on their project.\
-As queries underpin for instance your Dashboards in Jira, or JQL query results on Confluence pages, they can be nested.\
+As queries underpin for instance your Dashboards in Jira, or JQL query results on Confluence pages, they can be nested.
 When one of those queries aren't producing the correct result, it can be a pain to figure out what where went wrong.\
 Hence the need for version control.
 
