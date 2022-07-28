@@ -51,8 +51,8 @@ Running the scripts from command line however, is possible in windows. The windo
 The difference in between windows & ubuntu is the jq setup. 
 Ubuntu comes with jq pre-installed, windows needs a little help. (More info on the windows branch of this project.) 
 * Not that running locally (not in a runner) requires you to have a **env/prod.jira.secret.properties** in order to fetch your credentials. 
+Specifically this file is included in .gitignore, as this *must not* be residing in your repo. 
 The credentials should be stored in following properties like example below: 
   - **jira.user=Qxxxx**
   - **jira.pass=xyzwhatever**
-Specifically this file is included in .gitignore, as this *should not* be residing in your repo. 
 * Running the scripts from within a runner, requires you to have **GitHub Secrets** set: **JIRA_USER** and **JIRA_PASS** with the self-explanotory content. 
