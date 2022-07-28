@@ -5,8 +5,8 @@ The scripts to update Jira using the .json payload files is provided as well.
 # Pre-req's
 * jq command installed.  Check if the jq command is in your PATH or accessible from cli. 
 * Jira access. The scripts provided use a technical Q-account to update Jira JQL's.
-You need a technical Q-account and permission to update the JQL's in the json file. (see below)
-std input isn't required to fetch user:pass, as the script use a base64 encoded account for Jira access. 
+You need a technical Q-account and permission to update the JQL's in Jira from the json file. (see below)
+std input isn't required to fetch user:pass, as the script use GitHub secrets to store user:pass. (more details in Remarks at the bottom)
 
 # Usage
 * In terminal cli 
@@ -51,7 +51,7 @@ Running the scripts from command line however, is possible in windows. The windo
 The difference in between windows & ubuntu is the jq setup. 
 Ubuntu comes with jq pre-installed, windows needs a little help. (More info on the windows branch of this project.) 
 * Not that running locally (not in a runner) requires you to have a **env/prod.jira.secret.properties** in order to fetch your credentials. 
-Specifically this file is included in .gitignore, as this *must not* be residing in your repo. 
+Specifically this file is **included in .gitignore**, to prevent committing it to git, as this *must not* be residing in your repo. 
 The credentials should be stored in following properties like example below: 
   - **jira.user=Qxxxx**
   - **jira.pass=xyzwhatever**
