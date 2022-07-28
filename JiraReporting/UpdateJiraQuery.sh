@@ -18,11 +18,5 @@ fi
 QUERYID=$2
 PAYLOAD=$3
 
-printf "jirauser=$JIRAUSER and jirapass=$JIRAPASS with queryId=$QUERYID and payload=$PAYLOAD"
-printf "\n"
-
-#echo curl -u "$JIRAUSER:$JIRAPASS" -X PUT --data "$PAYLOAD" -H "Content-Type: application/json" $HOSTNAME$QUERYID$EXTENSION
-#printf "\n"
-
 curl -u "$JIRAUSER:$JIRAPASS" -X PUT --data "$PAYLOAD" -H "Content-Type: application/json" $HOSTNAME$QUERYID$EXTENSION
 

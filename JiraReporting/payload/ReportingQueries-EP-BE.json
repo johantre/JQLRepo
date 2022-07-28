@@ -4,7 +4,7 @@
 			"Id": "275982",
 			"Data": {
 				"name": "CtrlTestsInTestPlanAllButPASS EP BE",
-				"description": "",
+				"description": "Lets test this piece of beauty...",
 				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan EP BE', 'TODO|EXECUTING|FAIL|ABORTED|BLOCKED') ORDER BY rank",
 				"favourite": true
 			}
@@ -110,5 +110,4 @@
 		}
 	]
 }
-
 
