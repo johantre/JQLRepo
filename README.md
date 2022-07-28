@@ -52,4 +52,4 @@ Under the hood, the script is uses commands like xargs etc, which aren't support
 Running the scripts from command line however, is possible. The windows branch will be kept alive for this purpose: testing locally through WSL2 or Git Bash. 
 * Running scripts locally (not in a runner) requires you to have a **env/prod.jira.secret.properties** in order to fetch your credentials. 
 Specifically this file is included in .gitignore, as this *should not* be residing in your repo. 
-* Running the scripts from within a runner, requires you to have GitHub Secrets set: JIRA_USER and JIRA_PASS. 
+* Running the scripts from within a runner, requires you to have **GitHub Secrets** set: **JIRA_USER** and **JIRA_PASS** with the self-explanotory content. 
