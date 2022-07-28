@@ -45,3 +45,7 @@ At the moment of writing, we can say this small project can serve to keep JQL qu
 A better solution would be having this in your PATH. 
 However, maintaining PATH for each employee requires admin rights, which isn't sustainable to maintain. 
 * Jira hostname is found in the [env/prod.jira.properties](./JiraReporting/env/prod.jira.properties) file.
+* At the moment of writing, this project works under windows and ubuntu runners. The only difference can be found in the jq setup.
+Ubuntu has this pre-installed, windows needs a little help. (More info on the windows branch of this project.) 
+This means in practice, you are able to use self-hosted runners as well on windows as this runs on powershell. 
+Once this project uses more typical linux commands like xargs etc, this condition isn't met anymore, and the windows branch will become deprecated. 
