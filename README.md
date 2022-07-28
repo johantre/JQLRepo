@@ -55,4 +55,4 @@ Specifically this file is **included in .gitignore**, to prevent committing it t
 The credentials should be stored in following properties like example below: 
   - **jira.user=Qxxxx**
   - **jira.pass=xyzwhatever**
-* Running the scripts from within a runner, requires you to have **GitHub Secrets** set: **JIRA_USER** and **JIRA_PASS** with the self-explanotory content. 
+* Running the scripts from within a runner, requires you to have **GitHub Secrets** set: **JIRA_USER** and **JIRA_PASS** with the self-explanatory content. 
