@@ -1,13 +1,22 @@
 # JQLRepo
 Repo with all JQL's provided in the .json payload files. 
 The scripts to update Jira using the .json payload files is provided as well. 
+This project enables anyone to keep track of the Jira queries on their project. 
+As queries underpin for instance your Dashboards in Jira, or JQL query results on Confluence pages, they can be nested. 
+When one of those queries aren't producing the correct result, it can be a pain to figure out what where went wrong. 
+Hence the need for version control.
 
 # Pre-req's
 * jq command installed.  Check if the jq command is in your PATH or accessible from cli. 
 * Jira access. The scripts provided use a technical Q-account to update Jira JQL's.
 You need a technical Q-account and permission to update the JQL's in Jira from the json file. (see below)
 std input isn't required to fetch user:pass, as the script use GitHub secrets to store user:pass. (more details in Remarks at the bottom)
-
+Currently, GitHub Actions of this GitHub project takes care of the automation towards Jira updating with a **technical user:  QQMIBI4**.
+In order to have this project able to update *your* Jira project, you'll need to  
+  - give this **QQMIBI4** user permission to your Jira project
+  - write *your own* json payload file (see examples) with *your* queries in it, commit & push to this repo
+  - GitHub Actions will update Jira with all JQL's it finds in a changed json files it sees at git push time
+  
 # Usage
 * In terminal cli 
   - From anywhere you like, call the scripts below preceding the scripts with the path to their location. 
