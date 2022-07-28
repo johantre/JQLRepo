@@ -6,21 +6,23 @@ jiraprops="$DIR/env/prod.jira.properties"
 
 HOSTNAME=$(prop 'jira.host' $jiraprops)
 EXTENSION=$(prop 'jira.extension' $jiraprops)
-JIRAUSER=$(prop 'jira.user' $jiraprops)
-JIRAPASS=$(prop 'jira.pass' $jiraprops)
 
-#USERBASE64=$(prop 'jira.user.base64' $jiraprops)
+if test -z "$JIRAUSER"
+then
+  echo "Falling back to $DIR/env/prod.jira.secret.properties fore credentials"
+  jirasecretprops="$DIR/env/prod.jira.secret.properties"
+  JIRAUSER=$(prop 'jira.user' $jirasecretprops)
+  JIRAPASS=$(prop 'jira.pass' $jirasecretprops)
+fi
 
 QUERYID=$2
 PAYLOAD=$3
 
-printf "queryId=$QUERYID and payload=$PAYLOAD"
+printf "jirauser=$JIRAUSER and jirapass=$JIRAPASS with queryId=$QUERYID and payload=$PAYLOAD"
 printf "\n"
 
-echo curl -u "$JIRAUSER:$JIRAPASS" -X PUT --data "$PAYLOAD" -H "Content-Type: application/json" $HOSTNAME$QUERYID$EXTENSION
-printf "\n"
+#echo curl -u "$JIRAUSER:$JIRAPASS" -X PUT --data "$PAYLOAD" -H "Content-Type: application/json" $HOSTNAME$QUERYID$EXTENSION
+#printf "\n"
 
 curl -u "$JIRAUSER:$JIRAPASS" -X PUT --data "$PAYLOAD" -H "Content-Type: application/json" $HOSTNAME$QUERYID$EXTENSION
-
-
 

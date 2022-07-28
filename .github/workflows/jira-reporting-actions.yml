@@ -3,6 +3,9 @@ on:
   push:
     paths: 
      - '**/*.json'
+env:
+  JIRAUSER: ${{ secrets.JIRA_USER }}
+  JIRAPASS: ${{ secrets.JIRA_PASS }}
 jobs:
   changedfiles-job:
     runs-on: [atc-ubuntu-latest]
