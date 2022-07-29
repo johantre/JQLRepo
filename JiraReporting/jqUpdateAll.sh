@@ -12,7 +12,7 @@ printf "Updating all *.json JQueries found in $DIR/payload folder..."
 
 find $DIR -iname "*.json" | while read JSONQUERYFILE
   do
-    echo "For file: $JSONQUERYFILE" 
+    printf "For file: $JSONQUERYFILE" 
     printf "\n"
     bash $DIR"/"$JQUPDATEJSON "$JSONQUERYFILE"
   done 
