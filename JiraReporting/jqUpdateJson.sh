@@ -1,10 +1,9 @@
 #!/bin/sh
 DIR=$(dirname $0)
 source "$DIR/lib/lib.sh"
-
 prodprops="$DIR/env/prod.update.properties"
 
-UPDATEJIRAQUERY=$(prop 'update.sh' $prodprops)
+JIRAUPDATEQUERY=$(prop 'update.sh' $prodprops)
 JQCOMMAND=$(prop 'update.jq.command' $prodprops)
 JSONQUERYFILE=$1
 
@@ -18,5 +17,5 @@ echo $JSONQUERYFILE
 					$JQCOMMAND "${argsExecCmd[@]}" \
 							| sed 's/"/\"/g' \
 							| xargs -d '\n' \
-							bash $DIR"/"$UPDATEJIRAQUERY
+							bash $DIR"/"$JIRAUPDATEQUERY
 			done
