@@ -4,7 +4,7 @@
 			"Id": "274301",
 			"Data": {
 				"name": "xDontLeaveHomeWithoutIt",
-				"description": "",
+				"description": "Kick-ass runner",
 				"jql": "issue in testExecWithTestRunsAssignedToUser()",
 				"favourite": true
 			}

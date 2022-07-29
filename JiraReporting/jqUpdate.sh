@@ -15,6 +15,6 @@ printf "\n"
 
 argsExecCmd=(-c -r --arg name "$filterName" '.FilterQueries[] | if .Data.name == $name then .Id, .Data else empty end' "$DIR/payload/$JSONQUERYFILE")
 $JQCOMMAND "${argsExecCmd[@]}" \
-		| sed 's/"/\"/g' \
-		| xargs -d '\n' \
-		bash $DIR"/"$JIRAUPDATEQUERY
+    | sed 's/"/\"/g' \
+    | xargs -d '\n' \
+    bash $DIR"/"$JIRAUPDATEQUERY
