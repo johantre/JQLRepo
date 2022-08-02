@@ -118,6 +118,15 @@
 			}
 		},
 		{
+			"Id": "363820",
+			"Data": {
+				"name": "MPTTestExecsInTestPlanAssignedToCurrentUser FNC BE",
+				"description": "Executions in Test Plan for current user",
+				"jql": "project = MILES4ALL AND issue in testExecWithTestRunsAssignedToUser() AND 'Test Plan' = MILES4ALL-8345 ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
 			"Id": "270739",
 			"Data": {
 				"name": "MPTTestsInTestPlan FNC BE",
