@@ -112,7 +112,7 @@
 			"Id": "270731",
 			"Data": {
 				"name": "MPTTestExecsInTestPlan FNC BE",
-				"description": "",
+				"description": "Test as proof",
 				"jql": "project = MILES4ALL AND issue in testPlanTestExecutions(MILES4ALL-8345) ORDER BY rank",
 				"favourite": true
 			}
