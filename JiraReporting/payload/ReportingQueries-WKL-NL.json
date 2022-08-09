@@ -59,7 +59,7 @@
 			"Data": {
 				"name": "MPTTestExecsInTestPlanAssignedToCurrentUser WKL NL",
 				"description": "Executions in Test Plan for current user",
-				"jql": "project = MILES4ALL AND issue in testExecWithTestRunsAssignedToUser() AND 'Test Plan' = MILES4ALL-7846 ORDER BY rank",
+				"jql": "project = MILES4ALL AND  filter=264218 AND issue in testExecWithTestRunsAssignedToUser() ORDER BY rank",
 				"favourite": true
 			}
 		},
