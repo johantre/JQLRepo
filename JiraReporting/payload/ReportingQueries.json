@@ -116,6 +116,15 @@
 				"jql": "project = MILES4ALL AND issuetype not in (Test, Pre-Condition, 'Test Set', 'Test Execution', 'Test Plan') AND status != Closed ORDER BY Rank ASC",
 				"favourite": true
 			}
+		},
+		{
+			"Id": "365610",
+			"Data": {
+				"name": "CtrlSoficoSync",
+				"description": "Query to feed export lists for prios Sofico from MILES4ALL-Sofico Sync board",
+				"jql": "project = MILES4ALL AND issuetype not in (Test, Pre-Condition, 'Test Set', 'Test Execution', 'Test Plan') AND status != Closed AND Labels in (Sofico) AND priority in (Critical, High) AND status in (New, Open, 'In Specification', 'In Progress', Pending) ORDER BY priority, Status, Rank ASC",
+				"favourite": true
+			}
 		}
 	]
 }
