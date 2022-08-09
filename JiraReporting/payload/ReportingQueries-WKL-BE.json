@@ -64,6 +64,15 @@
 			}
 		},
 		{
+			"Id": "366014",
+			"Data": {
+				"name": "MPTTestExecsAndTestsInTestPlanNoFixVer WKL BE",
+				"description": "All Test Plan content w/o FixVersion",
+				"jql": "(filter = 263664 OR filter = 264217) AND fixVersion is EMPTY ORDER BY issuetype DESC",
+				"favourite": true
+			}
+		},
+		{
 			"Id": "263664",
 			"Data": {
 				"name": "MPTTestsInTestPlan WKL BE",
@@ -83,6 +92,4 @@
 		}
 	]
 }
-
-
 
