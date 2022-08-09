@@ -85,7 +85,7 @@
 			"Id": "349547",
 			"Data": {
 				"name": "MPTTestsInTestPlanAssignedToCurrentUserFAIL|EXECUTING|TODO WKL NL",
-				"description": "Tests from Test Executions in TestPlan with Test Runs on current user",
+				"description": "Tests from Test Executions in TestPlan with Test Runs on current user ",
 				"jql": "issue in testExecutionTests('MPTTestExecsInTestPlanAssignedToCurrentUser WKL NL', 'FAIL|EXECUTING|TODO')",
 				"favourite": true
 			}
