@@ -66,7 +66,7 @@
 		{
 			"Id": "366037",
 			"Data": {
-				"name": "MPTTestExecsInTestPlanUnreleased WKL BE",
+				"name": "MPTTestExecsInTestPlanUnreleased WKL NL",
 				"description": "Executions in Test Plan Unreleased",
 				"jql": "filter = 264218 AND (fixVersion not in releasedVersions() OR fixVersion is EMPTY)",
 				"favourite": true
@@ -85,8 +85,8 @@
 			"Id": "349547",
 			"Data": {
 				"name": "MPTTestsInTestPlanAssignedToCurrentUserFAIL|EXECUTING|TODO WKL NL",
-				"description": "Tests from Test Executions in TestPlan with Test Runs on current user ",
-				"jql": "issue in testExecutionTests('MPTTestExecsInTestPlanAssignedToCurrentUser WKL NL', 'FAIL|EXECUTING|TODO')",
+				"description": "Tests from Test Executions in TestPlan with Test Runs on current user",
+				"jql": "issue in testExecutionTests('MPTTestExecsInTestPlanUnreleasedAssignedToCurrentUser WKL NL', 'FAIL|EXECUTING|TODO')",
 				"favourite": true
 			}
 		}

@@ -86,7 +86,7 @@
 			"Data": {
 				"name": "MPTTestsInTestPlanAssignedToCurrentUserFAIL|EXECUTING|TODO WKL BE",
 				"description": "Tests from Test Executions in TestPlan with Test Runs on current user",
-				"jql": "issue in testExecutionTests('MPTTestExecsInTestPlanAssignedToCurrentUser WKL BE', 'FAIL|EXECUTING|TODO')",
+				"jql": "issue in testExecutionTests('MPTTestExecsInTestPlanUnreleasedAssignedToCurrentUser WKL BE', 'FAIL|EXECUTING|TODO')",
 				"favourite": true
 			}
 		}
