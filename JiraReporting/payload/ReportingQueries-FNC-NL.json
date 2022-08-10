@@ -122,7 +122,7 @@
 			"Data": {
 				"name": "MPTTestExecsInTestPlanAssignedToCurrentUser FNC NL",
 				"description": "Executions in Test Plan for current user",
-				"jql": "project = MILES4ALL AND  filter=270732 AND issue in testExecWithTestRunsAssignedToUser() ORDER BY rank",
+				"jql": "filter=270732 AND issue in testExecWithTestRunsAssignedToUser() ORDER BY rank",
 				"favourite": true
 			}
 		},
