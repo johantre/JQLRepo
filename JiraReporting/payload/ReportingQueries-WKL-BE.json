@@ -57,18 +57,18 @@
 		{
 			"Id": "349193",
 			"Data": {
-				"name": "MPTTestExecsInTestPlanAssignedToCurrentUser WKL BE",
-				"description": "Executions in Test Plan for current user",
-				"jql": "project = MILES4ALL AND  filter=264217 AND issue in testExecWithTestRunsAssignedToUser() ORDER BY rank",
+				"name": "MPTTestExecsInTestPlanUnreleasedAssignedToCurrentUser WKL BE",
+				"description": "Executions in Test Plan Unreleased Plan for current User",
+				"jql": "filter=264217 AND issue in testExecWithTestRunsAssignedToUser() AND (fixVersion not in releasedVersions() OR fixVersion is EMPTY) ORDER BY rank",
 				"favourite": true
 			}
 		},
 		{
-			"Id": "366014",
+			"Id": "366036",
 			"Data": {
-				"name": "MPTTestExecsAndTestsInTestPlanNoFixVer WKL BE",
-				"description": "All Test Plan content w/o FixVersion",
-				"jql": "(filter = 263664 OR filter = 264217) AND fixVersion is EMPTY ORDER BY issuetype DESC",
+				"name": "MPTTestExecsInTestPlanUnreleased WKL BE",
+				"description": "Executions in Test Plan Unreleased",
+				"jql": "filter = 264217 AND (fixVersion not in releasedVersions() OR fixVersion is EMPTY)",
 				"favourite": true
 			}
 		},
