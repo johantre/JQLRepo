@@ -59,7 +59,7 @@
 			"Data": {
 				"name": "MPTTestExecsInTestPlanUnreleasedAssignedToCurrentUser WKL NL",
 				"description": "Executions in Test Plan Unreleased for current User",
-				"jql": "filter=264218 AND issue in testExecWithTestRunsAssignedToUser() AND (fixVersion not in releasedVersions() OR fixVersion is EMPTY) ORDER BY rank",
+				"jql": "filter=264218 AND issue in testExecWithTestRunsAssignedToUser() AND ((fixVersion not in releasedVersions() OR fixVersion is EMPTY) OR Status != Closed) ORDER BY rank",
 				"favourite": true
 			}
 		},
@@ -68,7 +68,7 @@
 			"Data": {
 				"name": "MPTTestExecsInTestPlanUnreleased WKL NL",
 				"description": "Executions in Test Plan Unreleased",
-				"jql": "filter = 264218 AND (fixVersion not in releasedVersions() OR fixVersion is EMPTY)",
+				"jql": "filter = 264218 AND ((fixVersion not in releasedVersions() OR fixVersion is EMPTY) OR Status != Closed)",
 				"favourite": true
 			}
 		},
