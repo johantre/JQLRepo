@@ -55,20 +55,11 @@
 			}
 		},
 		{
-			"Id": "366920",
-			"Data": {
-				"name": "MPTTestsInTestPlanFAIL|ABOR WKL BE",
-				"description": "",
-				"jql": "TestRunStatus = 'MILES4ALL-8083 - FAIL' OR TestRunStatus = 'MILES4ALL-8083 - ABORTED'",
-				"favourite": true
-			}
-		},
-		{
 			"Id": "349193",
 			"Data": {
 				"name": "MPTTestExecsInTestPlanUnreleasedAssignedToCurrentUser WKL BE",
-				"description": "Executions in Test Plan Unreleased Plan for current User",
-				"jql": "filter=264217 AND issue in testExecWithTestRunsAssignedToUser() AND ((fixVersion in unreleasedVersions() OR fixVersion is EMPTY) OR Status != Closed OR (issue in testTestExecutions('MPTTestsInTestPlanFAIL|ABOR WKL BE') AND Status = Closed)) ORDER BY rank",
+				"description": "Executions in Test Plan Unreleased for current User",
+				"jql": "filter=264217 AND issue in testExecWithTestRunsAssignedToUser() AND (fixVersion in unreleasedVersions() OR fixVersion is EMPTY OR (issue in testTestExecutions('MPTTestsInTestPlan WKL BE', 'TODO|EXECUTING|FAIL|BLOCKED|N/A')))",
 				"favourite": true
 			}
 		},
@@ -77,7 +68,7 @@
 			"Data": {
 				"name": "MPTTestExecsInTestPlanUnreleased WKL BE",
 				"description": "Executions in Test Plan Unreleased",
-				"jql": "filter = 264217 AND ((fixVersion in unreleasedVersions() OR fixVersion is EMPTY) OR Status != Closed OR (issue in testTestExecutions('MPTTestsInTestPlanFAIL|ABOR WKL BE') AND Status = Closed))",
+				"jql": "filter=264217 AND (fixVersion in unreleasedVersions() OR fixVersion is EMPTY OR (issue in testTestExecutions('MPTTestsInTestPlan WKL BE', 'TODO|EXECUTING|FAIL|BLOCKED|N/A')))",
 				"favourite": true
 			}
 		},
