@@ -73,6 +73,15 @@
 			}
 		},
 		{
+			"Id": "367994",
+			"Data": {
+				"name": "MPTTestsInTestPlanUnreleased WKL BE",
+				"description": "Executions in Test Plan Unreleased",
+				"jql": "filter=263664 AND (fixVersion in unreleasedVersions() OR fixVersion is EMPTY OR (issue in testTestExecutions('MPTTestsInTestPlan WKL BE', 'TODO|EXECUTING|FAIL|BLOCKED|N/A')))",
+				"favourite": true
+			}
+		},
+		{
 			"Id": "263664",
 			"Data": {
 				"name": "MPTTestsInTestPlan WKL BE",
