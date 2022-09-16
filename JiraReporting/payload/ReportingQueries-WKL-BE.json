@@ -5,7 +5,7 @@
 			"Data": {
 				"name": "CtrlPASSTestRunsAssignedMPT BE",
 				"description": "tracking the NL boyz for BE",
-				"jql": "issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, qxz0c91) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, qtd2005) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, qtd0593) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, qt76380) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, qtc6712) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, qtb4864) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, qxz084o)",
+				"jql": "issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, qxz0c91) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, qtd2005) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, qtd0593) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, qt76380) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, qtc6712) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, qtb4864) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, qxz084o) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, qxz0c91) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, qxz36cw)",
 				"favourite": true
 			}
 		},
@@ -14,7 +14,7 @@
 			"Data": {
 				"name": "CtrlPASSTestRunsExecutedMPT BE",
 				"description": "tracking the NL boyz for BE",
-				"jql": "issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, '', 'false', qxz0c91) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, '', 'false', qtd2005) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, '', 'false', qtd0593) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, '', 'false', qt76380) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, '', 'false', qtc6712) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, '', 'false', qtb4864) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, '', 'false', qxz084o)",
+				"jql": "issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, '', 'false', qxz0c91) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, '', 'false', qtd2005) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, '', 'false', qtd0593) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, '', 'false', qt76380) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, '', 'false', qtc6712) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, '', 'false', qtb4864) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, '', 'false', qxz084o) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, '', 'false', qxz0c91) OR issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, '', 'false', qxz36cw)",
 				"favourite": true
 			}
 		},

@@ -77,7 +77,7 @@
 			"Data": {
 				"name": "MPTDefectsInTestPlanOpenInTreatment FNC NL",
 				"description": "Defects in treatment by MPT for NL",
-				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC NL') AND status not in (Closed, Resolved) AND assignee in (qtd2005, qtd0593, qt76380, qtc6712, qtb4864, qxz084o, qxz0c91) ORDER BY rank",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC NL') AND status not in (Closed, Resolved) AND assignee in (qtd2005, qtd0593, qt76380, qtc6712, qtb4864, qxz084o, qxz0c91, qxz36cw) ORDER BY rank",
 				"favourite": true
 			}
 		},		
@@ -95,7 +95,7 @@
 			"Data": {
 				"name": "MPTDefectsInTestPlanOpenReTest FNC NL",
 				"description": "",
-				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC NL') AND status not in (Closed, Resolved) AND assignee not in (qtd2005, qtd0593, qt76380, qtc6712, qtb4864, qxz084o, qxz0c91) ORDER BY rank",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC NL') AND status not in (Closed, Resolved) AND assignee not in (qtd2005, qtd0593, qt76380, qtc6712, qtb4864, qxz084o, qxz0c91, qxz36cw) ORDER BY rank",
 				"favourite": true
 			}
 		},
