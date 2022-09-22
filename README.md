@@ -39,6 +39,7 @@ This will ask you nothing at all and it will sequencially update *all* JQL paylo
 # Payload files
 * At the moment of writing, we can say this small project can serve to keep JQL queries under source control.  Whatever the reason it is.
 * The current payload files all represent a Jira Dashboard and a series of queries for making test activities transparent. 
+  - [BoardQueries.json](./JiraReporting/payload/BoardQueries.json) for MPT Board queries.
   - [ReportingQueries.json](./JiraReporting/payload/ReportingQueries.json) for general queries.
   - [ReportingQueries-WKL-BE.json](./JiraReporting/payload/ReportingQueries-WKL-BE.json) for the weekly releases dashboard BE.
   - [ReportingQueries-WKL-NL.json](./JiraReporting/payload/ReportingQueries-WKL-NL.json) for the weekly releases dashboard NL.
