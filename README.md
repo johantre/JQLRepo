@@ -30,7 +30,7 @@ This is a version of the script that only requires a *.json* file. This script w
 This will ask you nothing at all and it will sequencially update *all* JQL payloads queries found of all *.json* files found in [payload](./JiraReporting/payload/) folder. 
 
 # Automation w GitHub Actions
-* Whenever a commit on an existing *.json* file or a new one is pushed, the scripts are triggered to take that file, and update Jira with the payloads in that *.json* file.\
+* Whenever a commit on an existing *.json* file or a new one is pushed, the scripts are triggered to take that file, and update Jira with the payloads in that *.json* file.
   - More specifically, it is the calling [jqUpdateJson.sh](./JiraReporting/jqUpdateJson.sh) and updates Jira with all JQL's in the changed/added *.json* file.
   - This helps understanding that all JQL's in one *.json* file are fitting together and calling each other.\
 In practice, they serve to feed our dashboards and progress pages in Jira.
@@ -83,7 +83,7 @@ The difference in between windows & ubuntu is the jq setup.\
 Ubuntu comes with jq pre-installed, windows needs a little help. (More info on the windows branch of this project.) 
 * Note that running locally (not in a runner) requires you to have an **env/prod.jira.secret.properties** in order to fetch your credentials.\
 Specifically this file is **included in .gitignore**, to prevent committing it to git, as this *must not* be residing in your repo.\
-The credentials should be stored in following properties like example below:\
+The credentials should be stored in following properties like example below:
   - **jira.user=Qxxxx**
   - **jira.pass=xyzwhatever**
 * Running the scripts from within a runner, requires you to have **GitHub Secrets** set with the self-explanatory content:
