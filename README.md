@@ -69,6 +69,8 @@ New queries are being added as well.  (e.g. our [BoardQueries.json](./JiraReport
   - [ReportingQueries-FNC-NL.json](./JiraReporting/payload/ReportingQueries-FNC-NL.json) for the functional releases dashboard NL.
   - [ReportingQueries-EP-NL.json](./JiraReporting/payload/ReportingQueries-EP-BE.json) for the Emergency Patch releases dashboard NL.
   - [ReportingQueries-EP-NL.json](./JiraReporting/payload/ReportingQueries-EP-NL.json) for the Emergency Patch releases dashboard NL.
+* **Tips from the trenches**
+  - In your queries you want to use *single quotes*, it would mess up your *.json* structure. Check the existing payload *.json* files as an example. 
 
 # Remarks (Manual & Automation)
 * jq should be available from cli. Check out [env/prod.update.properties](./JiraReporting/env/prod.update.properties) file. 
