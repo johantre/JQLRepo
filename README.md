@@ -83,7 +83,7 @@ Running the scripts from command line however, is possible in windows.\
 The windows branch will be kept alive for this purpose: testing locally through WSL/WSL2 or Git Bash.\
 The difference in between windows & ubuntu is the jq setup.\
 Ubuntu comes with jq pre-installed, windows needs a little help. (More info on the windows branch of this project.) 
-* Note that running locally (not in a runner) requires you to have an **env/prod.jira.secret.properties** in order to fetch your credentials.\
+* Note that running locally (not in a enterprise runner, but a local runner) requires you to have an **env/prod.jira.secret.properties** in order to fetch *your* credentials.\
 Specifically this file is **included in .gitignore**, to prevent committing it to git, as this *must not* be residing in your repo.\
 The credentials should be stored in following properties like example below:
   - **jira.user=Qxxxx**
