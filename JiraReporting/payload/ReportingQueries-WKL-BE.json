@@ -134,6 +134,15 @@
 				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, '', 'false', '', 'false', 'false') ORDER BY rank",
 				"favourite": true
 			}
+		},
+		{
+			"Id": "383492",
+			"Data": {
+				"name": "CtrlTestsInTestPlanNoEvidence WKL BE",
+				"description": "All Tests in WKL BE Test Plan without Test Evidence",
+				"jql": "project = MILES4ALL AND ((issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, '', 'true', '', 'true', 'false')) OR (issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, '', 'true', '', 'false', 'false')) OR (issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, '', 'false', '', 'true', 'false')) OR (issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, '', 'false', '', 'false', 'false')))",
+				"favourite": true
+			}
 		}
 	]
 }
