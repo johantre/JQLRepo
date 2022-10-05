@@ -152,6 +152,15 @@
 				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan FNC BE', 'FAIL|EXECUTING|BLOCKED|ABORTED|N/A|TODO') ORDER BY rank",
 				"favourite": true
 			}
+		},
+		{
+			"Id": "384410",
+			"Data": {
+				"name": "CtrlTestsInTestPlanNoEvidence FNC BE",
+				"description": "All Tests in FNC BE Test Plan without Test Evidence",
+				"jql": "project = MILES4ALL AND ((issue in testExecutionTests('MPTTestExecsInTestPlan FNC BE', PASS, '', 'true', '', 'true', 'false')) OR (issue in testExecutionTests('MPTTestExecsInTestPlan FNC BE', PASS, '', 'true', '', 'false', 'false')) OR (issue in testExecutionTests('MPTTestExecsInTestPlan FNC BE', PASS, '', 'false', '', 'true', 'false')) OR (issue in testExecutionTests('MPTTestExecsInTestPlan FNC BE', PASS, '', 'false', '', 'false', 'false')))",
+				"favourite": true
+			}
 		}
 	]
 }
