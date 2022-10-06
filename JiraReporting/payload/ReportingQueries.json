@@ -104,7 +104,7 @@
 			"Data": {
 				"name": "MILES4ALL-Defect Kanban board",
 				"description": "Query to feed MILES4ALL Defect Kanban board",
-				"jql": "project in (MILES4ALL, MyBMW\@SF) AND (issuetype in (Defect) AND status not in (Inactive, Ready) OR issuetype = Epic AND status != Closed OR issuetype = Story AND status not in (Closed, Resolved) AND 'Epic Link' is not EMPTY AND issuetype not in (Saga)) ORDER BY Rank ASC",
+				"jql": "project in (MILES4ALL, 'MyBMW@SF') AND (issuetype in (Defect) AND status not in (Inactive, Ready) OR issuetype = Epic AND status != Closed OR issuetype = Story AND status not in (Closed, Resolved) AND 'Epic Link' is not EMPTY AND issuetype not in (Saga)) ORDER BY Rank ASC",
 				"favourite": true
 			}
 		},
