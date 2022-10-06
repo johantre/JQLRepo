@@ -64,6 +64,15 @@
 			}
 		},
 		{
+			"Id": "384733",
+			"Data": {
+				"name": "BKL Resolved items yesterday openSprints",
+				"description": "All items of our Sprint moved to Resolved yesterday ",
+				"jql": "project = MILES4ALL AND Sprint in openSprints() AND status = Resolved AND status changed after startOfDay(-1) AND status changed before endOfDay(-1)",
+				"favourite": true
+			}
+		},
+		{
 			"Id": "274005",
 			"Data": {
 				"name": "CtrlMyTestExecutions",
