@@ -28,6 +28,6 @@ jobs:
         run: |
            echo "Update Jira with dependency tree in the changed file: "
            for file in ${{ steps.changed-files-eol.outputs.all_changed_files }}; do
-             if bash ./JiraReporting/jqUpdateJson.sh $file | grep -i 'error'; then core.setFailed('Check feedback. One of your JQL's failed!'); fi 
+             if bash ./JiraReporting/jqUpdateJson.sh $file | grep -i 'error'; then core.setFailed('Check feedback. One of your JQLs failed!'); fi 
            done
 
