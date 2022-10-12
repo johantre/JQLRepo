@@ -39,7 +39,8 @@ In practice, they serve to feed our dashboards and progress pages in Jira.
   - Commit your changes to your local repo
   - Push your commit to GitHub
 * GitHub Actions will take it from here, and update Jira with your new/changed payload *.json* file.
-  - Check out the [https://atc-github.azure.cloud.bmw/ATC-GitHub/github-jira-sync/actions](https://atc-github.azure.cloud.bmw/ATC-GitHub/github-jira-sync/actions) for feedback on your Jira updates. 
+  - Check out the [https://atc-github.azure.cloud.bmw/ATC-GitHub/github-jira-sync/actions](https://atc-github.azure.cloud.bmw/ATC-GitHub/github-jira-sync/actions) for feedback on your Jira updates.
+  - An 'Error handling' Step has been added to signal to the Actions framework there was a failure. Any 'error' found in the processing of the previous Step will result in the Gui with the right error handling.
 * **Caution!** 
   - Test your queries FIRST before committing & pushing!!
   - If you're unsure on your change, do use the Jira INT environment to test out first: [https://atc-int.bmwgroup.net/jira](https://atc-int.bmwgroup.net/jira)
