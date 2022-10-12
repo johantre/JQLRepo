@@ -28,6 +28,6 @@ jobs:
         run: |
            echo "Update Jira with dependency tree in the changed file: "
            for file in ${{ steps.changed-files-eol.outputs.all_changed_files }}; do
-             bash ./JiraReporting/jqUpdateJson.sh $file
+             if bash ./JiraReporting/jqUpdateJson.sh $file | grep -i 'error'; then echo 'NOK'; else echo 'OK'; fi 
            done
 
