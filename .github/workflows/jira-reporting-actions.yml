@@ -32,7 +32,7 @@ jobs:
              if bash ./JiraReporting/jqUpdateJson.sh $file | grep -i 'error'; then echo '::set-output name=ErrorsFound::NOK'; else  echo '::set-output name=ErrorsFound::OK'; fi 
            done
       - name: Error handling
-        if: ${{ steps.use-changed-files.outputs.ErrorsFound = 'NOK' }}
+        if: ${{ steps.use-changed-files.outputs.ErrorsFound == 'NOK' }}
         uses: actions/github-script@v3
         with:
           script: |
