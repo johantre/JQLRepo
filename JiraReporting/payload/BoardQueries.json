@@ -5,7 +5,7 @@
 			"Data": {
 				"name": "MILES4ALL-Defect Kanban board",
 				"description": "Query to feed MILES4ALL Defect Kanban board",
-				"jql": "project = MILES4ALL AND (issuetype in (Defect) AND status not in (Closed)) ORDER BY Rank ASC",
+				"jql": "project = MILES4ALL AND issuetype in (Defect) ORDER BY Rank ASC",
 				"favourite": true
 			}
 		},
