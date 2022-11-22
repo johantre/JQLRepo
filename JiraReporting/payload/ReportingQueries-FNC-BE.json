@@ -1,6 +1,15 @@
 {
 	"FilterQueries": [
 		{
+			"Id": "397095",
+			"Data": {
+				"name": "MPTTestPlan FNC BE",
+				"description": "Simple query of 'the Test Plan'",
+				"jql": "project = MILES4ALL AND issue in (MILES4ALL-8345) ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
 			"Id": "272628",
 			"Data": {
 				"name": "CtrlTestsInTestPlanAllButPASS FNC BE",
@@ -113,7 +122,7 @@
 			"Data": {
 				"name": "MPTTestExecsInTestPlan FNC BE",
 				"description": "",
-				"jql": "project = MILES4ALL AND issue in testPlanTestExecutions(MILES4ALL-8345) ORDER BY rank",
+				"jql": "project = MILES4ALL AND issue in testPlanTestExecutions('MPTTestPlan FNC BE') ORDER BY rank",
 				"favourite": true
 			}
 		},
