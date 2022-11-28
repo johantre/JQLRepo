@@ -102,9 +102,9 @@
 		{
 			"Id": "267825",
 			"Data": {
-				"name": "MPTTestsInTestPlanOpen EP BE",
+				"name": "MPTTestsInTestPlanTODO EP BE",
 				"description": "",
-				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan EP BE', 'FAIL|EXECUTING|BLOCKED|ABORTED|N/A|TODO') ORDER BY rank",
+				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan EP BE', 'TODO') ORDER BY rank",
 				"favourite": true
 			}
 		}

@@ -156,9 +156,9 @@
 		{
 			"Id": "270736",
 			"Data": {
-				"name": "MPTTestsInTestPlanOpen FNC NL",
+				"name": "MPTTestsInTestPlanTODO FNC NL",
 				"description": "",
-				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan FNC NL', 'FAIL|EXECUTING|BLOCKED|ABORTED|N/A|TODO') ORDER BY rank",
+				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan FNC NL', 'TODO') ORDER BY rank",
 				"favourite": true
 			}
 		},
