@@ -100,42 +100,6 @@
 			}
 		},
 		{
-			"Id": "384074",
-			"Data": {
-				"name": "CtrlTestsInTestPlanDefectsCommentsNoEvidence WKL BE",
-				"description": "No Evidence Tests, but having Defects and Comments",
-				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, '', 'true', '', 'true', 'false') ORDER BY rank",
-				"favourite": true
-			}
-		},
-		{
-			"Id": "384073",
-			"Data": {
-				"name": "CtrlTestsInTestPlanDefectsNoCommentsNoEvidence WKL BE",
-				"description": "No Evidence Tests, but having Defects and No Comments",
-				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, '', 'true', '', 'false', 'false') ORDER BY rank",
-				"favourite": true
-			}
-		},
-		{
-			"Id": "384075",
-			"Data": {
-				"name": "CtrlTestsInTestPlanNoDefectsCommentsNoEvidence WKL BE",
-				"description": "No Evidence Tests, but having No Defects and Comments",
-				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, '', 'false', '', 'true', 'false') ORDER BY rank",
-				"favourite": true
-			}
-		},
-		{
-			"Id": "384072",
-			"Data": {
-				"name": "CtrlTestsInTestPlanNoDefectsNoCommentsNoEvidence WKL BE",
-				"description": "No Evidence Tests, but having No Defects and No Comments",
-				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan WKL BE', PASS, '', 'false', '', 'false', 'false') ORDER BY rank",
-				"favourite": true
-			}
-		},
-		{
 			"Id": "383492",
 			"Data": {
 				"name": "CtrlTestsInTestPlanNoEvidence WKL BE",
