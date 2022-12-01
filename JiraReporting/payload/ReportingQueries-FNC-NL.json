@@ -310,7 +310,7 @@
 			"Id": "399213",
 			"Data": {
 				"name": "MPTTestsInTestPlanTODO|EXECUTING FNC NL",
-				"description": "",
+				"description": "This is a description test if the command is updated",
 				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan FNC NL', 'TODO|EXECUTING') ORDER BY rank",
 				"favourite": true
 			}
