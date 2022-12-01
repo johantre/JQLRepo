@@ -7,6 +7,7 @@ JIRAUPDATEQUERY=$(prop 'update.sh' $prodprops)
 JQCOMMAND=$(prop 'update.jq.command' $prodprops)
 JSONQUERYFILE=$1
 
+echo "For file: $JSONQUERYFILE"
 printf "For file: $JSONQUERYFILE"
 printf "\n"
 
