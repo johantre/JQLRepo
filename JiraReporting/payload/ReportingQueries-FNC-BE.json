@@ -46,11 +46,65 @@
 			}
 		},
 		{
+			"Id": "384410",
+			"Data": {
+				"name": "CtrlTestsInTestPlanNoEvidence FNC BE",
+				"description": "All Tests in FNC BE Test Plan without Test Evidence",
+				"jql": "project = MILES4ALL AND ((issue in testExecutionTests('MPTTestExecsInTestPlan FNC BE', PASS, '', 'true', '', 'true', 'false')) OR (issue in testExecutionTests('MPTTestExecsInTestPlan FNC BE', PASS, '', 'true', '', 'false', 'false')) OR (issue in testExecutionTests('MPTTestExecsInTestPlan FNC BE', PASS, '', 'false', '', 'true', 'false')) OR (issue in testExecutionTests('MPTTestExecsInTestPlan FNC BE', PASS, '', 'false', '', 'false', 'false')))",
+				"favourite": true
+			}
+		},
+		{
 			"Id": "270751",
 			"Data": {
 				"name": "MPTDefectsInTestPlan FNC BE",
 				"description": "",
-				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC BE') ORDER BY rank",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC BE') AND (component is EMPTY OR component = MRI) ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "398696",
+			"Data": {
+				"name": "MPTDefectsInTestPlanFFlag1Open FNC BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC BE') AND (component is EMPTY OR component = MRI) AND Labels in (eSignature) AND status not in (Closed, Resolved) ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "398694",
+			"Data": {
+				"name": "MPTDefectsInTestPlanFFlag1OpenCritical FNC BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC BE') AND (component is EMPTY OR component = MRI) AND Labels in (eSignature) AND status not in (Closed, Resolved) AND Priority = Critical ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "399848",
+			"Data": {
+				"name": "MPTDefectsInTestPlanNonMiles FNC BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC BE') AND component is not EMPTY AND component != MRI ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "399846",
+			"Data": {
+				"name": "MPTDefectsInTestPlanNonMilesOpen FNC BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC BE') AND component is not EMPTY AND component != MRI AND status not in (Closed, Resolved) ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "399219",
+			"Data": {
+				"name": "MPTDefectsInTestPlanNonMilesOpenCritical FNC BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC BE') AND component is not EMPTY AND component != MRI AND status not in (Closed, Resolved) AND Priority = Critical ORDER BY rank",
 				"favourite": true
 			}
 		},
@@ -59,7 +113,7 @@
 			"Data": {
 				"name": "MPTDefectsInTestPlanOpen FNC BE",
 				"description": "",
-				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC BE') AND status not in (Closed, Resolved) ORDER BY rank",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC BE') AND (component is EMPTY OR component = MRI) AND status not in (Closed, Resolved) ORDER BY rank",
 				"favourite": true
 			}
 		},
@@ -68,7 +122,7 @@
 			"Data": {
 				"name": "MPTDefectsInTestPlanOpenCritical FNC BE",
 				"description": "",
-				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC BE') AND status not in (Closed, Resolved) AND Priority = critical ORDER BY rank",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC BE') AND (component is EMPTY OR component = MRI) AND status not in (Closed, Resolved) AND Priority = critical ORDER BY rank",
 				"favourite": true
 			}
 		},
@@ -77,7 +131,7 @@
 			"Data": {
 				"name": "MPTDefectsInTestPlanOpenFlagged FNC BE",
 				"description": "",
-				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC BE') AND status not in (Closed, Resolved) AND flagged is not EMPTY ORDER BY rank",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC BE') AND (component is EMPTY OR component = MRI) AND status not in (Closed, Resolved) AND flagged is not EMPTY ORDER BY rank",
 				"favourite": true
 			}
 		},
@@ -86,7 +140,7 @@
 			"Data": {
 				"name": "MPTDefectsInTestPlanOpenInTreatment FNC BE",
 				"description": "Defects in treatment by MPT for BE",
-				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC BE') AND status not in (Closed, Resolved) AND assignee in (qtd2005, qtd0593, qt76380, qtc6712, qtb4864, qxz084o, qxz0c91, qxz36cw) ORDER BY rank",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC BE') AND (component is EMPTY OR component = MRI) AND status not in (Closed, Resolved) AND assignee in (qtd2005, qtd0593, qt76380, qtc6712, qtb4864, qxz084o, qxz0c91, qxz36cw) ORDER BY rank",
 				"favourite": true
 			}
 		},
@@ -95,7 +149,7 @@
 			"Data": {
 				"name": "MPTDefectsInTestPlanOpenMPT FNC BE",
 				"description": "",
-				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC BE') AND status not in (Closed, Resolved) AND labels not in (Sofico) ORDER BY rank",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC BE') AND (component is EMPTY OR component = MRI) AND status not in (Closed, Resolved) AND labels not in (Sofico) ORDER BY rank",
 				"favourite": true
 			}
 		},
@@ -104,7 +158,7 @@
 			"Data": {
 				"name": "MPTDefectsInTestPlanOpenReTest FNC BE",
 				"description": "",
-				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC BE') AND status not in (Closed, Resolved) AND assignee not in (qtd2005, qtd0593, qt76380, qtc6712, qtb4864, qxz084o, qxz0c91, qxz36cw) ORDER BY rank",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC BE') AND (component is EMPTY OR component = MRI) AND status not in (Closed, Resolved) AND assignee not in (qtd2005, qtd0593, qt76380, qtc6712, qtb4864, qxz084o, qxz0c91, qxz36cw) ORDER BY rank",
 				"favourite": true
 			}
 		},
@@ -113,7 +167,52 @@
 			"Data": {
 				"name": "MPTDefectsInTestPlanOpenSofico FNC BE",
 				"description": "",
-				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC BE') AND status not in (Closed, Resolved) AND labels in (Sofico) ORDER BY rank",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC BE') AND (component is EMPTY OR component = MRI) AND status not in (Closed, Resolved) AND labels in (Sofico) ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "398699",
+			"Data": {
+				"name": "MPTDefectsInTestPlanRegression FNC BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTesting('MPTTestsInTestPlanRegression FNC BE') AND (component is EMPTY OR component = MRI) ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "399201",
+			"Data": {
+				"name": "MPTDefectsInTestPlanRegressionOpen FNC BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTesting('MPTTestsInTestPlanRegression FNC BE') AND (component is EMPTY OR component = MRI) AND status not in (Closed, Resolved) ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "399203",
+			"Data": {
+				"name": "MPTDefectsInTestPlanRegressionOpenCritical FNC BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTesting('MPTTestsInTestPlanRegression FNC BE') AND (component is EMPTY OR component = MRI) AND status not in (Closed, Resolved) AND Priority = Critical ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "399350",
+			"Data": {
+				"name": "MPTDefectsInTestPlanRemainingOpen FNC BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTesting('MPTTestsInTestPlanRemaining FNC BE') AND (component is EMPTY OR component = MRI) AND (labels not in (eSignature) OR labels is EMPTY) AND Status not in (Closed, Resolved) ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "399348",
+			"Data": {
+				"name": "MPTDefectsInTestPlanRemainingOpenCritical FNC BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTesting('MPTTestsInTestPlanRemaining FNC BE') AND (component is EMPTY OR component = MRI) AND (labels not in (eSignature) OR labels is EMPTY) AND Status not in (Closed, Resolved) AND Priority = Critical ORDER BY rank",
 				"favourite": true
 			}
 		},
@@ -145,6 +244,24 @@
 			}
 		},
 		{
+			"Id": "398690",
+			"Data": {
+				"name": "MPTTestsInTestPlanFFlag1 FNC BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan FNC BE') AND Labels in (eSignature) ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "399208",
+			"Data": {
+				"name": "MPTTestsInTestPlanFFlag1TODO|EXECUTING FNC BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan FNC BE', 'TODO|EXECUTING') AND Labels in (eSignature) ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
 			"Id": "279161",
 			"Data": {
 				"name": "MPTTestsInTestPlanNoAssignee FNC BE",
@@ -154,20 +271,47 @@
 			}
 		},
 		{
-			"Id": "270737",
+			"Id": "398343",
 			"Data": {
-				"name": "MPTTestsInTestPlanTODO FNC BE",
+				"name": "MPTTestsInTestPlanRegression FNC BE",
 				"description": "",
-				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan FNC BE', 'TODO') ORDER BY rank",
+				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan FNC BE') AND issue in testRepositoryFolderTests(MILES4ALL, 'BE Market', 'true') ORDER BY rank",
 				"favourite": true
 			}
 		},
 		{
-			"Id": "384410",
+			"Id": "398581",
 			"Data": {
-				"name": "CtrlTestsInTestPlanNoEvidence FNC BE",
-				"description": "All Tests in FNC BE Test Plan without Test Evidence",
-				"jql": "project = MILES4ALL AND ((issue in testExecutionTests('MPTTestExecsInTestPlan FNC BE', PASS, '', 'true', '', 'true', 'false')) OR (issue in testExecutionTests('MPTTestExecsInTestPlan FNC BE', PASS, '', 'true', '', 'false', 'false')) OR (issue in testExecutionTests('MPTTestExecsInTestPlan FNC BE', PASS, '', 'false', '', 'true', 'false')) OR (issue in testExecutionTests('MPTTestExecsInTestPlan FNC BE', PASS, '', 'false', '', 'false', 'false')))",
+				"name": "MPTTestsInTestPlanRegressionTODO|EXECUTING FNC BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan FNC BE', 'TODO|EXECUTING') AND issue in testRepositoryFolderTests(MILES4ALL, 'BE Market', 'true') ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "399342",
+			"Data": {
+				"name": "MPTTestsInTestPlanRemaining FNC BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan FNC BE') AND issue not in testRepositoryFolderTests(MILES4ALL, 'BE Market', 'true') AND (Labels not in (eSignature) OR Labels is EMPTY) ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "399341",
+			"Data": {
+				"name": "MPTTestsInTestPlanRemainingTODO|EXECUTING FNC BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan FNC BE', 'TODO|EXECUTING') AND issue not in testRepositoryFolderTests(MILES4ALL, 'BE Market', 'true') AND (Labels not in (eSignature) OR Labels is EMPTY) ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "399211",
+			"Data": {
+				"name": "MPTTestsInTestPlanTODO|EXECUTING FNC BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan FNC BE', 'TODO|EXECUTING') ORDER BY rank",
 				"favourite": true
 			}
 		}

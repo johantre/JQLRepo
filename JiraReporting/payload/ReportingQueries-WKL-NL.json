@@ -19,6 +19,15 @@
 			}
 		},
 		{
+			"Id": "383493",
+			"Data": {
+				"name": "CtrlTestsInTestPlanNoEvidence WKL NL",
+				"description": "All Tests in WKL NL Test Plan without Test Evidence",
+				"jql": "project = MILES4ALL AND ((issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, '', 'true', '', 'true', 'false')) OR (issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, '', 'true', '', 'false', 'false')) OR (issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, '', 'false', '', 'true', 'false')) OR (issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, '', 'false', '', 'false', 'false')))",
+				"favourite": true
+			}
+		},
+		{
 			"Id": "264214",
 			"Data": {
 				"name": "MPTDefectsInTestPlan WKL NL",
@@ -96,15 +105,6 @@
 				"name": "MPTTestsInTestPlanAssignedToCurrentUserFAIL|EXECUTING|TODO WKL NL",
 				"description": "Tests from Test Executions in TestPlan with Test Runs on current user",
 				"jql": "issue in testExecutionTests('MPTTestExecsInTestPlanUnreleasedAssignedToCurrentUser WKL NL', 'FAIL|EXECUTING|TODO')",
-				"favourite": true
-			}
-		},
-		{
-			"Id": "383493",
-			"Data": {
-				"name": "CtrlTestsInTestPlanNoEvidence WKL NL",
-				"description": "All Tests in WKL NL Test Plan without Test Evidence",
-				"jql": "project = MILES4ALL AND ((issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, '', 'true', '', 'true', 'false')) OR (issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, '', 'true', '', 'false', 'false')) OR (issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, '', 'false', '', 'true', 'false')) OR (issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL', PASS, '', 'false', '', 'false', 'false')))",
 				"favourite": true
 			}
 		}
