@@ -28,10 +28,9 @@ jobs:
         if: steps.changed-files-eol.outputs.any_changed == 'true'
         run: |
            echo "Update Jira with dependency tree in the changed files: "
-           echo '::set-output name=ErrorsFound::OK'
            for file in ${{ steps.changed-files-eol.outputs.all_changed_files }}; do
              echo $file
-             if bash ./JiraReporting/jqUpdateJson.sh $file | grep -i 'error'; then if ${{ steps.use-changed-files.outputs.ErrorsFound == 'OK' }}; then echo '::set-output name=ErrorsFound::NOK'; fi fi 
+             if bash ./JiraReporting/jqUpdateJson.sh $file | grep -i 'error'; then echo '::set-output name=ErrorsFound::NOK'; fi 
            done
       - name: Error handling
         if: ${{ steps.use-changed-files.outputs.ErrorsFound == 'NOK' }}
