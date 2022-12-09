@@ -73,6 +73,15 @@
 			}
 		},
 		{
+			"Id": "402505",
+			"Data": {
+				"name": "MPTTestsInTestPlanUnreleasedAssignedToCurrentUserPASSNoEvidence WKL BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND (issue in testExecutionTests('MPTTestExecsInTestPlanUnreleasedAssignedToCurrentUser WKL BE', PASS, '', 'true', '', '', 'false') OR issue in testExecutionTests('MPTTestExecsInTestPlanUnreleasedAssignedToCurrentUser WKL BE', PASS, '', 'false', '', '', 'false'))",
+				"favourite": true
+			}
+		},
+		{
 			"Id": "349193",
 			"Data": {
 				"name": "MPTTestExecsInTestPlanUnreleasedAssignedToCurrentUser WKL BE",

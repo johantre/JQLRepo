@@ -244,6 +244,15 @@
 			}
 		},
 		{
+			"Id": "402500",
+			"Data": {
+				"name": "MPTTestsInTestPlanAssignedToCurrentUserPASSNoEvidence FNC NL",
+				"description": "",
+				"jql": "project = MILES4ALL AND (issue in testExecutionTests('MPTTestExecsInTestPlanAssignedToCurrentUser FNC NL', PASS, '', 'true', '', '', 'false') OR issue in testExecutionTests('MPTTestExecsInTestPlanAssignedToCurrentUser FNC NL', PASS, '', 'false', '', '', 'false'))",
+				"favourite": true
+			}
+		},
+		{
 			"Id": "398580",
 			"Data": {
 				"name": "MPTTestsInTestPlanFFlag1 FNC NL",

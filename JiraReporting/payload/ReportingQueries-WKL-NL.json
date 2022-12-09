@@ -1,7 +1,7 @@
 {
 	"FilterQueries": [
 		{
-			"Id": "",
+			"Id": "401885",
 			"Data": {
 				"name": "MPTTestPlan WKL NL",
 				"description": "Simple query of 'the Test Plan'",
@@ -69,6 +69,15 @@
 				"name": "MPTTestExecsInTestPlan WKL NL",
 				"description": "",
 				"jql": "project = MILES4ALL AND issue in testPlanTestExecutions('MPTTestPlan WKL NL') ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "402506",
+			"Data": {
+				"name": "MPTTestsInTestPlanUnreleasedAssignedToCurrentUserPASSNoEvidence WKL NL",
+				"description": "",
+				"jql": "project = MILES4ALL AND (issue in testExecutionTests('MPTTestExecsInTestPlanUnreleasedAssignedToCurrentUser WKL NL', PASS, '', 'true', '', '', 'false') OR issue in testExecutionTests('MPTTestExecsInTestPlanUnreleasedAssignedToCurrentUser WKL NL', PASS, '', 'false', '', '', 'false'))",
 				"favourite": true
 			}
 		},
