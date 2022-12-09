@@ -1,6 +1,15 @@
 {
 	"FilterQueries": [
 		{
+			"Id": "401884",
+			"Data": {
+				"name": "MPTTestPlan WKL BE",
+				"description": "Simple query of 'the Test Plan'",
+				"jql": "project = MILES4ALL AND issue in (MILES4ALL-8083)",
+				"favourite": true
+			}
+		},
+		{
 			"Id": "354322",
 			"Data": {
 				"name": "CtrlPASSTestRunsAssignedMPT BE",
@@ -59,7 +68,7 @@
 			"Data": {
 				"name": "MPTTestExecsInTestPlan WKL BE",
 				"description": "",
-				"jql": "project = MILES4ALL AND issue in testPlanTestExecutions(MILES4ALL-8083) ORDER BY rank",
+				"jql": "project = MILES4ALL AND issue in testPlanTestExecutions('MPTTestPlan WKL BE') ORDER BY rank",
 				"favourite": true
 			}
 		},
