@@ -5,7 +5,7 @@
 			"Data": {
 				"name": "MPTTestPlan FNC NL",
 				"description": "Simple query of 'the Test Plan'",
-				"jql": "project = MILES4ALL AND issue in (MILES4ALL-8314) ORDER BY rank",
+				"jql": "project = MILES4ALL AND issue in (MILES4ALL-8314)",
 				"favourite": true
 			}
 		},
