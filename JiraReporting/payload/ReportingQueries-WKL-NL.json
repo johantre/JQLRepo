@@ -68,7 +68,7 @@
 			"Data": {
 				"name": "MPTTestExecsInTestPlanUnreleasedAssignedToCurrentUser WKL NL",
 				"description": "Executions in Test Plan Unreleased for current User",
-				"jql": "filter=264218 AND issue in testExecWithTestRunsAssignedToUser() AND (fixVersion in unreleasedVersions() OR fixVersion is EMPTY OR (issue in testTestExecutions('MPTTestsInTestPlan WKL NL', 'TODO|EXECUTING|FAIL|BLOCKED|N/A')))",
+				"jql": "filter=264218 AND issue in testExecWithTestRunsAssignedToUser() AND (fixVersion in unreleasedVersions() OR fixVersion is EMPTY)",
 				"favourite": true
 			}
 		},
@@ -77,7 +77,7 @@
 			"Data": {
 				"name": "MPTTestExecsInTestPlanUnreleased WKL NL",
 				"description": "Executions in Test Plan Unreleased",
-				"jql": "filter=264218 AND (fixVersion in unreleasedVersions() OR fixVersion is EMPTY OR (issue in testTestExecutions('MPTTestsInTestPlan WKL NL', 'TODO|EXECUTING|FAIL|BLOCKED|N/A')))",
+				"jql": "filter=264218 AND (fixVersion in unreleasedVersions() OR fixVersion is EMPTY)",
 				"favourite": true
 			}
 		},
@@ -86,7 +86,7 @@
 			"Data": {
 				"name": "MPTTestsInTestPlanUnreleased WKL NL",
 				"description": "Executions in Test Plan Unreleased",
-				"jql": "filter=264205 AND (fixVersion in unreleasedVersions() OR fixVersion is EMPTY OR (issue in testTestExecutions('MPTTestsInTestPlan WKL NL', 'TODO|EXECUTING|FAIL|BLOCKED|N/A')))",
+				"jql": "filter=264205 AND (fixVersion in unreleasedVersions() OR fixVersion is EMPTY)",
 				"favourite": true
 			}
 		},
@@ -96,15 +96,6 @@
 				"name": "MPTTestsInTestPlan WKL NL",
 				"description": "",
 				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan WKL NL') ORDER BY rank",
-				"favourite": true
-			}
-		},
-		{
-			"Id": "349547",
-			"Data": {
-				"name": "MPTTestsInTestPlanAssignedToCurrentUserFAIL|EXECUTING|TODO WKL NL",
-				"description": "Tests from Test Executions in TestPlan with Test Runs on current user",
-				"jql": "issue in testExecutionTests('MPTTestExecsInTestPlanUnreleasedAssignedToCurrentUser WKL NL', 'FAIL|EXECUTING|TODO')",
 				"favourite": true
 			}
 		}
