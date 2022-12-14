@@ -82,11 +82,29 @@
 			}
 		},
 		{
+			"Id": "403530",
+			"Data": {
+				"name": "MPTTestsInTestPlanUnreleasedPASSEvidence WKL BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND (issue in testExecutionTests('MPTTestExecsInTestPlanUnreleased WKL BE', PASS, '', 'true', '', '', 'true') OR issue in testExecutionTests('MPTTestExecsInTestPlanUnreleased WKL BE', PASS, '', 'false', '', '', 'true'))",
+				"favourite": true
+			}
+		},
+		{
 			"Id": "349193",
 			"Data": {
 				"name": "MPTTestExecsInTestPlanUnreleasedAssignedToCurrentUser WKL BE",
 				"description": "Executions in Test Plan Unreleased for current User",
 				"jql": "filter=264217 AND issue in testExecWithTestRunsAssignedToUser() AND (fixVersion in unreleasedVersions() OR fixVersion is EMPTY)",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "403532",
+			"Data": {
+				"name": "MPTTestExecsInTestPlanUnreleasedPASSEvidence WKL BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in testTestExecutions('MPTTestsInTestPlanUnreleasedPASSEvidence WKL BE', PASS)",
 				"favourite": true
 			}
 		},
