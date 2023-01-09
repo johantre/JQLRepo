@@ -91,6 +91,15 @@
 			}
 		},
 		{
+			"Id": "406186",
+			"Data": {
+				"name": "MPTTestsInTestPlanUnreleasedPASSNoEvidence WKL NL",
+				"description": "",
+				"jql": "project = MILES4ALL AND (issue in testExecutionTests('MPTTestExecsInTestPlanUnreleased WKL NL', PASS, '', 'true', '', '', 'false') OR issue in testExecutionTests('MPTTestExecsInTestPlanUnreleased WKL NL', PASS, '', 'false', '', '', 'false'))",
+				"favourite": true
+			}
+		},
+		{
 			"Id": "349504",
 			"Data": {
 				"name": "MPTTestExecsInTestPlanUnreleasedAssignedToCurrentUser WKL NL",
@@ -105,6 +114,15 @@
 				"name": "MPTTestExecsInTestPlanUnreleasedPASSEvidence WKL NL",
 				"description": "",
 				"jql": "project = MILES4ALL AND issue in testTestExecutions('MPTTestsInTestPlanUnreleasedPASSEvidence WKL NL', PASS)",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "406190",
+			"Data": {
+				"name": "MPTTestExecsInTestPlanUnreleasedPASSNoEvidence WKL NL",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in testTestExecutions('MPTTestsInTestPlanUnreleasedPASSNoEvidence WKL NL', PASS)",
 				"favourite": true
 			}
 		},
