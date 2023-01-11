@@ -25,5 +25,10 @@ else
   echo "Query id = $QUERYID"
 fi
 
+if test -n "$GITHUB_OUTPUT"
+then
+  echo "Query id = $QUERYID and payload = $PAYLOAD" >> $GITHUB_OUTPUT
+fi
+
 curl -u "$JIRAUSER:$JIRAPASS" -X PUT --data "$PAYLOAD" -H "Content-Type: application/json" $HOSTNAME$QUERYID$EXTENSION
 printf "\n"
