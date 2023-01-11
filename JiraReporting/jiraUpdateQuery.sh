@@ -20,8 +20,9 @@ PAYLOAD=$3
 
 if test -n "$DEBUGFLAG"
 then
-  printf "query id = $QUERYID and payload = $PAYLOAD"
-  printf "\n"
+  echo "Query id = $QUERYID and payload = $PAYLOAD"
+else
+  echo "Query id = $QUERYID"
 fi
 
 curl -u "$JIRAUSER:$JIRAPASS" -X PUT --data "$PAYLOAD" -H "Content-Type: application/json" $HOSTNAME$QUERYID$EXTENSION
