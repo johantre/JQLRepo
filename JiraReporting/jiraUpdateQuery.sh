@@ -25,14 +25,5 @@ else
   echo "Query id = $QUERYID"
 fi
 
-if test -n "$GITHUB_OUTPUT"
-then
-  echo "Query id = $QUERYID and payload = $PAYLOAD" >> $GITHUB_OUTPUT
-else
-  echo "Daamn"
-fi
-
-printf "Why can we not printf to the console?"
-
 curl -u "$JIRAUSER:$JIRAPASS" -X PUT --data "$PAYLOAD" -H "Content-Type: application/json" $HOSTNAME$QUERYID$EXTENSION
 printf "\n"
