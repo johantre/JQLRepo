@@ -32,7 +32,7 @@ jobs:
              echo "Changed payload file: $file"
              bash ./JiraReporting/jqUpdateJson.sh $file > locallog.txt; 
              echo "grep'n yeah!"
-             if grep -i 'error' locallog.txt; then echo '::set-output name=ErrorsFound::NOK' || true; fi;
+             if grep -i 'error' locallog.txt; then echo '::set-output name=ErrorsFound::NOK'; fi;
              echo "cat'n yeah!"
              cat locallog.txt;
            done
