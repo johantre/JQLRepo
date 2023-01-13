@@ -15,7 +15,7 @@ for i in $($JQCOMMAND "${argsForLoop[@]}")
   do
       forId=$(echo $i | tr -d '\r')   #remove weird chars from $i...
       argsExecCmd=(-c -r --arg idToSearch "$forId" '.FilterQueries[] | if .Id == $idToSearch then .Id, .Data else empty end' "$JSONQUERYFILE")
-      echo "Query updating:" $idToSearch
+      #echo "Query updating:" $idToSearch
       $JQCOMMAND "${argsExecCmd[@]}" \
           | sed 's/"/\"/g' \
           | xargs -d '\n' \
