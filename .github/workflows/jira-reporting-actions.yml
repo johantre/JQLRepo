@@ -30,11 +30,7 @@ jobs:
            echo "Update Jira with dependency tree in the changed files: "
            for file in ${{ steps.changed-files-eol.outputs.all_changed_files }}; do
              echo "Changed payload file: $file"
-             bash ./JiraReporting/jqUpdateJson.sh $file > locallog.txt; 
-             echo "grep'n yeah!"
-             if grep -i 'error' locallog.txt; then echo '::set-output name=ErrorsFound::NOK'; fi;
-             echo "cat'n yeah!"
-             cat locallog.txt;
+             bash ./JiraReporting/jqUpdateJson.sh $file 
            done
       - name: Error handling
         if: ${{ steps.use-changed-files.outputs.ErrorsFound == 'NOK' }}
