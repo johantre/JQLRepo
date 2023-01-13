@@ -31,7 +31,9 @@ jobs:
            for file in ${{ steps.changed-files-eol.outputs.all_changed_files }}; do
              echo "Changed payload file: $file"
              bash ./JiraReporting/jqUpdateJson.sh $file > locallog.txt; 
+             echo "grep'n yeah!"
              if grep -i 'error' locallog.txt; then echo '::set-output name=ErrorsFound::NOK' || true; fi;
+             echo "cat'n yeah!"
              cat locallog.txt;
            done
       - name: Error handling
