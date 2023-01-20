@@ -107,6 +107,24 @@
 				"jql": "project = MILES4ALL AND issuetype not in (Test, Pre-Condition, 'Test Set', 'Test Execution', 'Test Plan') AND status != Closed AND Labels in (Sofico) AND priority in (Critical, High) AND status in (New, Open, 'In Specification', 'In Progress', Pending) ORDER BY priority, Status, Rank ASC",
 				"favourite": true
 			}
+		},
+		{
+			"Id": "410747",
+			"Data": {
+				"name": "CtrlTestAfterFirstDec2022UnreleasedPASSNoEvidence",
+				"description": "All Tests that were found in Unreleased Executions, PASS, but NO Evidence",
+				"jql": "project = MILES4ALL AND (issue in testExecutionTests('CtrlTestExecsAfterFirstDec2022Unreleased', PASS, '', 'true', '', '', 'false') OR issue in testExecutionTests('CtrlTestExecsAfterFirstDec2022Unreleased', PASS, '', 'false', '', '', 'false'))",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "410744",
+			"Data": {
+				"name": "CtrlTestExecsAfterFirstDec2022Unreleased",
+				"description": "All Test Execs, Unreleased after 01/12/2022",
+				"jql": "project = MILES4ALL AND issuetype = 'Test Execution' AND createdDate >= '2022/12/01' AND (fixVersion in unreleasedVersions() OR fixVersion is EMPTY) ORDER BY cf[10930] DESC",
+				"favourite": true
+			}
 		}
 	]
 }
