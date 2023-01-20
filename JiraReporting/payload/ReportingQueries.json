@@ -112,7 +112,7 @@
 			"Id": "410747",
 			"Data": {
 				"name": "CtrlTestAfterFirstDec2022UnreleasedPASSNoEvidence",
-				"description": "All Tests that were found in Unreleased Executions created after 01/12/2022, PASS, but NO Evidence",
+				"description": "All Tests that were found in Unreleased Executions created after 01/12/2022, (regardless a Test Plan!), PASS, but NO Evidence",
 				"jql": "project = MILES4ALL AND (issue in testExecutionTests('CtrlTestExecsAfterFirstDec2022Unreleased', PASS, '', 'true', '', '', 'false') OR issue in testExecutionTests('CtrlTestExecsAfterFirstDec2022Unreleased', PASS, '', 'false', '', '', 'false'))",
 				"favourite": true
 			}
