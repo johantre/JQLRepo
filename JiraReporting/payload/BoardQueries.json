@@ -1,7 +1,7 @@
 {
 	"FilterQueries": [
 		{
-			"Id": "2241760000",
+			"Id": "224176",
 			"Data": {
 				"name": "MILES4ALL-Defect Kanban board",
 				"description": "Query to feed MILES4ALL Defect Kanban board",
