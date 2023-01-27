@@ -14,7 +14,7 @@
 			"Data": {
 				"name": "MILES4ALL-Sofico Sync",
 				"description": "Query to feed MILES4ALL Sofico Sync and Sofico Backlog",
-				"jql": "project = MILES4ALL AND issuetype not in (Test, Pre-Condition, 'Test Set', 'Test Execution', 'Test Plan') AND status != Closed AND Labels in (Sofico) ORDER BY Rank ASC",
+				"jql": "project = MILES4ALL AND issuetype not in (Test, Pre-Condition, 'Test Set', 'Test Execution', 'Test Plan') AND status != Closed AND 'Feature Team' in (Sofico) ORDER BY Rank ASC",
 				"favourite": true
 			}
 		},
