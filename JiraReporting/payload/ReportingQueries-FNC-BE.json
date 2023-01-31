@@ -202,8 +202,8 @@
 			"Id": "399350",
 			"Data": {
 				"name": "MPTDefectsInTestPlanRemainingOpen FNC BE",
-				"description": "",
-				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTesting('MPTTestsInTestPlanRemaining FNC BE') AND (component is EMPTY OR component = MRI) AND (labels not in (eSignature) OR labels is EMPTY) AND Status not in (Closed, Resolved) ORDER BY rank",
+				"description": "Remaining = non-regression (New Functionality) not FFlagged",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlanRemaining FNC BE') AND (component is EMPTY OR component = MRI) AND (labels not in (eSignature) OR labels is EMPTY) AND Status not in (Closed, Resolved) ORDER BY rank",
 				"favourite": true
 			}
 		},
@@ -211,8 +211,8 @@
 			"Id": "399348",
 			"Data": {
 				"name": "MPTDefectsInTestPlanRemainingOpenCritical FNC BE",
-				"description": "",
-				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTesting('MPTTestsInTestPlanRemaining FNC BE') AND (component is EMPTY OR component = MRI) AND (labels not in (eSignature) OR labels is EMPTY) AND Status not in (Closed, Resolved) AND Priority = Critical ORDER BY rank",
+				"description": "Remaining = non-regression (New Functionality) not FFlagged",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlanRemaining FNC BE') AND (component is EMPTY OR component = MRI) AND (labels not in (eSignature) OR labels is EMPTY) AND Status not in (Closed, Resolved) AND Priority = Critical ORDER BY rank",
 				"favourite": true
 			}
 		},
@@ -244,10 +244,19 @@
 			}
 		},
 		{
+			"Id": "413882",
+			"Data": {
+				"name": "MPTTestExecsInTestPlanRemaining FNC BE",
+				"description": "Remaining = non-regression (New Functionality) not FFlagged",
+				"jql": "project = MILES4ALL AND issue in testTestExecutions('MPTTestsInTestPlanRemaining FNC BE') AND issue in testPlanTestExecutions('MPTTestPlan FNC BE') ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
 			"Id": "270739",
 			"Data": {
 				"name": "MPTTestsInTestPlan FNC BE",
-				"description": "",
+				"description": "Deprecated, nowhere used",
 				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan FNC BE') ORDER BY rank",
 				"favourite": true
 			}
@@ -310,7 +319,7 @@
 			"Id": "399342",
 			"Data": {
 				"name": "MPTTestsInTestPlanRemaining FNC BE",
-				"description": "",
+				"description": "Remaining = non-regression (New Functionality) not FFlagged",
 				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan FNC BE') AND issue not in testRepositoryFolderTests(MILES4ALL, 'BE Market', 'true') AND (Labels not in (eSignature) OR Labels is EMPTY) ORDER BY rank",
 				"favourite": true
 			}
@@ -319,7 +328,7 @@
 			"Id": "399341",
 			"Data": {
 				"name": "MPTTestsInTestPlanRemainingTODO|EXECUTING FNC BE",
-				"description": "",
+				"description": "Remaining = non-regression (New Functionality) not FFlagged",
 				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan FNC BE', 'TODO|EXECUTING') AND issue not in testRepositoryFolderTests(MILES4ALL, 'BE Market', 'true') AND (Labels not in (eSignature) OR Labels is EMPTY) ORDER BY rank",
 				"favourite": true
 			}
