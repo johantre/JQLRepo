@@ -176,7 +176,7 @@
 			"Data": {
 				"name": "MPTDefectsInTestPlanRegression FNC NL",
 				"description": "",
-				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTesting('MPTTestsInTestPlanRegression FNC NL') AND (component is EMPTY OR component = MRI) ORDER BY rank",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlanRegression FNC NL') AND (component is EMPTY OR component = MRI) ORDER BY rank",
 				"favourite": true
 			}
 		},
@@ -185,7 +185,7 @@
 			"Data": {
 				"name": "MPTDefectsInTestPlanRegressionOpen FNC NL",
 				"description": "",
-				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTesting('MPTTestsInTestPlanRegression FNC NL') AND (component is EMPTY OR component = MRI) AND status not in (Closed, Resolved) ORDER BY rank",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlanRegression FNC NL') AND (component is EMPTY OR component = MRI) AND status not in (Closed, Resolved) ORDER BY rank",
 				"favourite": true
 			}
 		},
@@ -194,7 +194,7 @@
 			"Data": {
 				"name": "MPTDefectsInTestPlanRegressionOpenCritical FNC NL",
 				"description": "",
-				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTesting('MPTTestsInTestPlanRegression FNC NL') AND (component is EMPTY OR component = MRI) AND status not in (Closed, Resolved) AND Priority = Critical ORDER BY rank",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlanRegression FNC NL') AND (component is EMPTY OR component = MRI) AND status not in (Closed, Resolved) AND Priority = Critical ORDER BY rank",
 				"favourite": true
 			}
 		},
@@ -231,6 +231,15 @@
 				"name": "MPTTestExecsInTestPlanAssignedToCurrentUser FNC NL",
 				"description": "Executions in Test Plan for current user",
 				"jql": "filter=270732 AND issue in testExecWithTestRunsAssignedToUser() ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "413834",
+			"Data": {
+				"name": "MPTTestExecsInTestPlanRegression FNC NL",
+				"description": "Get all Executions related to the tests from Test repo and filter only the ones of the current Test Plan",
+				"jql": "project = MILES4ALL AND issue in testTestExecutions('MPTTestsInTestPlanRegression FNC NL') AND issue in testPlanTestExecutions('MPTTestPlan FNC NL') ORDER BY rank",
 				"favourite": true
 			}
 		},
@@ -284,7 +293,7 @@
 			"Data": {
 				"name": "MPTTestsInTestPlanRegression FNC NL",
 				"description": "",
-				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan FNC NL') AND issue in testRepositoryFolderTests(MILES4ALL, 'NL Market', 'true') ORDER BY rank",
+				"jql": "project = MILES4ALL AND issue in testPlanTests('MPTTestPlan FNC NL') AND issue in testRepositoryFolderTests(MILES4ALL, 'NL Market', 'true') ORDER BY rank",
 				"favourite": true
 			}
 		},
@@ -319,11 +328,10 @@
 			"Id": "400038",
 			"Data": {
 				"name": "MPTTestsInTestPlanTODO|EXECUTING FNC NL",
-				"description": "This is a description test if the command is updated",
+				"description": "",
 				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan FNC NL', 'TODO|EXECUTING') ORDER BY rank",
 				"favourite": true
 			}
 		}
 	]
 }
-
