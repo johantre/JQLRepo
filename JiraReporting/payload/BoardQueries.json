@@ -26,7 +26,15 @@
 				"jql": "project = MILES4ALL AND issuetype not in (Test, Pre-Condition, 'Test Set', 'Test Execution', 'Test Plan') AND status != Closed AND (component not in ('Financial Services @ FSM') OR component is EMPTY) ORDER BY Rank ASC",
 				"favourite": true
 			}
+		},
+		{
+			"Id": "417750",
+			"Data": {
+				"name": "FSM Board",
+				"description": "Query to feed FSM board",
+				"jql": "project = MILES4ALL AND issuetype not in (Test, Pre-Condition, 'Test Set', 'Test Execution', 'Test Plan') AND status != Closed AND component in ('Financial Services @ FSM') ORDER BY Rank ASC",
+				"favourite": true
+			}
 		}
 	]
 }
-
