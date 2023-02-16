@@ -282,9 +282,9 @@
 		{
 			"Id": "399209",
 			"Data": {
-				"name": "MPTTestsInTestPlanFFlag1TODO|EXECUTING FNC NL",
+				"name": "MPTTestsInTestPlanFFlag1TODO|EXECUTING|BLOCKED FNC NL",
 				"description": "",
-				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan FNC NL', 'TODO|EXECUTING') AND Labels in (eSignature) ORDER BY rank",
+				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan FNC NL', 'TODO|EXECUTING|BLOCKED') AND Labels in (eSignature) ORDER BY rank",
 				"favourite": true
 			}
 		},
@@ -309,9 +309,9 @@
 		{
 			"Id": "398582",
 			"Data": {
-				"name": "MPTTestsInTestPlanRegressionTODO|EXECUTING FNC NL",
+				"name": "MPTTestsInTestPlanRegressionTODO|EXECUTING|BLOCKED FNC NL",
 				"description": "",
-				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan FNC NL', 'TODO|EXECUTING') AND issue in testRepositoryFolderTests(MILES4ALL, 'NL Market', 'true') ORDER BY rank",
+				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan FNC NL', 'TODO|EXECUTING|BLOCKED') AND issue in testRepositoryFolderTests(MILES4ALL, 'NL Market', 'true') ORDER BY rank",
 				"favourite": true
 			}
 		},
@@ -327,18 +327,18 @@
 		{
 			"Id": "399343",
 			"Data": {
-				"name": "MPTTestsInTestPlanRemainingTODO|EXECUTING FNC NL",
+				"name": "MPTTestsInTestPlanRemainingTODO|EXECUTING|BLOCKED FNC NL",
 				"description": "Remaining = non-regression (New Functionality) not FFlagged",
-				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan FNC NL', 'TODO|EXECUTING') AND issue not in testRepositoryFolderTests(MILES4ALL, 'NL Market', 'true') AND (Labels not in (eSignature) OR Labels is EMPTY) ORDER BY rank",
+				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan FNC NL', 'TODO|EXECUTING|BLOCKED') AND issue not in testRepositoryFolderTests(MILES4ALL, 'NL Market', 'true') AND (Labels not in (eSignature) OR Labels is EMPTY) ORDER BY rank",
 				"favourite": true
 			}
 		},
 		{
 			"Id": "400038",
 			"Data": {
-				"name": "MPTTestsInTestPlanTODO|EXECUTING FNC NL",
+				"name": "MPTTestsInTestPlanTODO|EXECUTING|BLOCKED FNC NL",
 				"description": "",
-				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan FNC NL', 'TODO|EXECUTING') ORDER BY rank",
+				"jql": "project = MILES4ALL AND issue in testExecutionTests('MPTTestExecsInTestPlan FNC NL', 'TODO|EXECUTING|BLOCKED') ORDER BY rank",
 				"favourite": true
 			}
 		}
