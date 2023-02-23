@@ -253,6 +253,15 @@
 			}
 		},
 		{
+			"Id": "421915",
+			"Data": {
+				"name": "MPTTestExecsInTestPlanUnassignedTODO FNC NL",
+				"description": "All Test Executions containing Unassigned Tests",
+				"jql": "project = MILES4ALL AND issue in testTestExecutions('CtrlTestsInTestPlanAllTODOUnassigned FNC NL', TODO) ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
 			"Id": "270738",
 			"Data": {
 				"name": "MPTTestsInTestPlan FNC NL",
