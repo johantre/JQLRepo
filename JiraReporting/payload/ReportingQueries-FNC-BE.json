@@ -235,6 +235,15 @@
 			}
 		},
 		{
+			"Id": "424179",
+			"Data": {
+				"name": "MPTTestExecsInTestPlanPASSNoEvidence FNC BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in testTestExecutions('MPTTestsInTestPlanPASSNoEvidence FNC BE') AND issue in testPlanTestExecutions('MPTTestPlan FNC BE')",
+				"favourite": true
+			}
+		},
+		{
 			"Id": "413835",
 			"Data": {
 				"name": "MPTTestExecsInTestPlanRegression FNC BE",
