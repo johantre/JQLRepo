@@ -140,7 +140,7 @@
 			"Data": {
 				"name": "MPTDefectsInTestPlanOpenInTreatment FNC BE",
 				"description": "Defects in treatment by MPT for BE",
-				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC BE') AND (component is EMPTY OR component = MRI) AND status not in (Closed, Resolved) AND assignee in (qtd2005, qtd0593, qt76380, qtc6712, qtb4864, qxz084o, qxz0c91, qxz36cw) ORDER BY rank",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC BE') AND (component is EMPTY OR component = MRI) AND status not in (Closed, Resolved) AND assignee in (qtd2005, qtd0593, qt76380, qtc6712, qtb4864, qxz084o, qxz0c91, qxz36cw, qte4042) ORDER BY rank",
 				"favourite": true
 			}
 		},
@@ -158,7 +158,7 @@
 			"Data": {
 				"name": "MPTDefectsInTestPlanOpenReTest FNC BE",
 				"description": "",
-				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC BE') AND (component is EMPTY OR component = MRI) AND status not in (Closed, Resolved) AND assignee not in (qtd2005, qtd0593, qt76380, qtc6712, qtb4864, qxz084o, qxz0c91, qxz36cw) ORDER BY rank",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('MPTTestExecsInTestPlan FNC BE') AND (component is EMPTY OR component = MRI) AND status not in (Closed, Resolved) AND assignee not in (qtd2005, qtd0593, qt76380, qtc6712, qtb4864, qxz084o, qxz0c91, qxz36cw, qte4042) ORDER BY rank",
 				"favourite": true
 			}
 		},
