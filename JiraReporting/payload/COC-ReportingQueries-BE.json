@@ -1,0 +1,112 @@
+{
+	"FilterQueries": [
+		{
+			"Id": "425949",
+			"Data": {
+				"name": "",
+				"description": "Simple query of 'the Test Plan'",
+				"jql": "project = MILES4ALL AND issue in (MILES4ALL-10187)",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "425947",
+			"Data": {
+				"name": "COCDefectsInTestPlan BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in defectsCreatedDuringTestExecution('COCTestExecsInTestPlan BE') ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "425948",
+			"Data": {
+				"name": "COCTestExecsInTestPlan BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in testPlanTestExecutions('COCTestPlan BE') ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "425950",
+			"Data": {
+				"name": "COCTestExecsInTestPlanUnreleased BE",
+				"description": "",
+				"jql": "filter = 425948 AND (fixVersion in unreleasedVersions() OR fixVersion is EMPTY)",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "425965",
+			"Data": {
+				"name": "COCTestExecsInTestPlanUnreleasedAssignedToCurrentUser BE",
+				"description": "",
+				"jql": "filter = 425948 AND issue in testExecWithTestRunsAssignedToUser() AND (fixVersion in unreleasedVersions() OR fixVersion is EMPTY)",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "425957",
+			"Data": {
+				"name": "COCTestExecsInTestPlanUnreleasedPASSEvidence BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in testTestExecutions('COCTestsInTestPlanUnreleasedPASSEvidence BE', PASS)",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "425961",
+			"Data": {
+				"name": "COCTestExecsInTestPlanUnreleasedPASSNoEvidence BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in testTestExecutions('COCTestsInTestPlanUnreleasedPASSNoEvidence BE', PASS)",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "425953",
+			"Data": {
+				"name": "COCTestsInTestPlan BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND issue in testExecutionTests('COCTestExecsInTestPlan BE') ORDER BY rank",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "425952",
+			"Data": {
+				"name": "COCTestsInTestPlanUnreleased BE",
+				"description": "",
+				"jql": "filter = 425953 AND (fixVersion in unreleasedVersions() OR fixVersion is EMPTY)",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "425963",
+			"Data": {
+				"name": "COCTestsInTestPlanUnreleasedAssignedToCurrentUserPASSNoEvidence BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND (issue in testExecutionTests('COCTestExecsInTestPlanUnreleasedAssignedToCurrentUser BE', PASS, '', 'true', '', '', 'false') OR issue in testExecutionTests('COCTestExecsInTestPlanUnreleasedAssignedToCurrentUser BE', PASS, '', 'false', '', '', 'false'))",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "425955",
+			"Data": {
+				"name": "COCTestsInTestPlanUnreleasedPASSEvidence BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND (issue in testExecutionTests('COCTestExecsInTestPlanUnreleased BE', PASS, '', 'true', '', '', 'true') OR issue in testExecutionTests('COCTestExecsInTestPlanUnreleased BE', PASS, '', 'false', '', '', 'true'))",
+				"favourite": true
+			}
+		},
+		{
+			"Id": "425956",
+			"Data": {
+				"name": "COCTestsInTestPlanUnreleasedPASSNoEvidence BE",
+				"description": "",
+				"jql": "project = MILES4ALL AND (issue in testExecutionTests('COCTestExecsInTestPlanUnreleased BE', PASS, '', 'true', '', '', 'false') OR issue in testExecutionTests('COCTestExecsInTestPlanUnreleased BE', PASS, '', 'false', '', '', 'false'))",
+				"favourite": true
+			}
+		}
+	]
+}
