@@ -3,7 +3,7 @@
 		{
 			"Id": "425949",
 			"Data": {
-				"name": "",
+				"name": "COCTestPlan BE",
 				"description": "Simple query of 'the Test Plan'",
 				"jql": "project = MILES4ALL AND issue in (MILES4ALL-10187)",
 				"favourite": true
